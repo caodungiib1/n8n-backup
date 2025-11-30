@@ -1,0 +1,193 @@
+{
+  "active": true,
+  "connections": {
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Nhắn Tin",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond to Webhook3": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-11-10T18:37:10.658Z",
+  "id": "NB6PlknRdrc4TIYF",
+  "isArchived": false,
+  "meta": null,
+  "name": "Rep Tin Nhắn",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.entry[0].messaging[0].message.text }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        -140,
+        220
+      ],
+      "id": "cc55b1aa-3ea8-48c9-bb57-e936f3c7e4fb",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -180,
+        420
+      ],
+      "id": "cc7fa8ca-49e5-42f2-bcb8-1ee2211d00df",
+      "name": "Google Gemini Chat Model1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "TdsIzXvOvDSXd52Q",
+          "name": "Google Gemini AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "webhook-meta-messenger",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -700,
+        200
+      ],
+      "id": "9f3803f9-4524-4314-9a47-ab39ea3d79f9",
+      "name": "Webhook1",
+      "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query['hub.challenge'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -380,
+        20
+      ],
+      "id": "6f6bd6be-af10-4eef-8476-c6503de6c086",
+      "name": "Respond to Webhook2"
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -380,
+        220
+      ],
+      "id": "79f1c7c6-7285-4590-ba5f-ad6a3b150242",
+      "name": "Respond to Webhook3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/me/messages ",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAZAvfVmpgz8BP3kwCevO3E0ssfXAUZAIopZBuuwWIbnPfQ3NZAJwxOTF6GdZBHFhbZAWjxxbIw8BkdNwd55WUJcIcZAudmv8oSaHfkBxJ9BMfWZAdOaLKALwJK9e1OEVeLxosZCyqJiTSIGahsdqBLEfwO2jVBl1lrA0vcVp2vIevS1PcBXJWAFRwTvNBVWZA62BdxHL1k5YXmZAUv56KO9GoJdoelUh1KqePdXAEMVRGW7VHbUObs53hXZASEZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"id\": \"{{ $('Respond to Webhook3').item.json.body.entry[0].messaging[0].sender.id }}\"\n  },\n  \"message\": {\n    \"text\": \"Xin chào! Cảm ơn bạn đã comment. Chúng tôi có ưu đãi đặc biệt, reply để chat nhé! 😊\"\n  },\n  \"messaging_type\": \"RESPONSE\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        220
+      ],
+      "id": "aa74d3e5-d49c-40a0-8e30-e24854ecefbc",
+      "name": "Nhắn Tin"
+    }
+  ],
+  "pinData": {
+    "Webhook1": []
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-11-10T18:37:10.661Z",
+      "updatedAt": "2025-11-10T18:37:10.661Z",
+      "role": "workflow:owner",
+      "workflowId": "NB6PlknRdrc4TIYF",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-11-10T18:54:34.000Z",
+  "versionId": "0ad5edef-9a35-43c7-ba1c-6d27c1187f4c"
+}
