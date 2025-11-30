@@ -1,0 +1,223 @@
+{
+  "active": false,
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Calculate Yesterday Date",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculate Yesterday Date": {
+      "main": [
+        [
+          {
+            "node": "Fetch TikTok Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch TikTok Profile": {
+      "main": [
+        [
+          {
+            "node": "Parse TikTok Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse TikTok Data": {
+      "main": [
+        [
+          {
+            "node": "Save to Google Sheets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Check for Errors",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for Errors": {
+      "main": [
+        [
+          {
+            "node": "Send Error Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-08-11T02:11:27.205Z",
+  "id": "AIJpPTXY381qs7kU",
+  "isArchived": true,
+  "meta": null,
+  "name": "My workflow 27",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "2a11ffbd-afc4-4247-8697-c22c7739b5c5",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        -200,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Tính toán ngày hôm qua\nconst yesterday = new Date();\nyesterday.setDate(yesterday.getDate() - 1);\n\n// Format ngày theo định dạng YYYY-MM-DD\nconst yesterdayStr = yesterday.toISOString().split('T')[0];\n\n// TikTok profile URL\nconst profileUrl = 'https://www.tiktok.com/@dau_dau480';\n\nreturn [{\n  json: {\n    profileUrl: profileUrl,\n    targetDate: yesterdayStr,\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "148b0287-57af-41ca-b6e7-f791716d1986",
+      "name": "Calculate Yesterday Date",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        20,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.profileUrl }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "15dcbc99-7e7c-4333-a41a-637509e85d3f",
+      "name": "Fetch TikTok Profile",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        240,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lưu ý: TikTok sử dụng JavaScript để load nội dung động\n// Phương pháp này có thể không hoạt động hoàn hảo do TikTok chống scraping\n\nconst html = $input.first().json.data;\nconst targetDate = $('Calculate Yesterday Date').first().json.targetDate;\n\n// Tìm kiếm các script tags chứa dữ liệu JSON\nconst scriptMatches = html.match(/<script[^>]*>window\\.__INITIAL_STATE__\\s*=\\s*({.*?});?<\\/script>/s);\n\nlet posts = [];\n\nif (scriptMatches && scriptMatches[1]) {\n  try {\n    const initialState = JSON.parse(scriptMatches[1]);\n    \n    // Tìm dữ liệu video trong cấu trúc JSON\n    // Cấu trúc có thể thay đổi theo thời gian\n    if (initialState.ItemList && initialState.ItemList.user && initialState.ItemList.user.list) {\n      const videoList = initialState.ItemList.user.list;\n      \n      videoList.forEach(video => {\n        if (video && video.createTime) {\n          const createDate = new Date(video.createTime * 1000);\n          const videoDate = createDate.toISOString().split('T')[0];\n          \n          // Chỉ lấy video của ngày hôm qua\n          if (videoDate === targetDate) {\n            posts.push({\n              id: video.id,\n              desc: video.desc || '',\n              createTime: createDate.toISOString(),\n              url: `https://www.tiktok.com/@dau_dau480/video/${video.id}`,\n              stats: {\n                playCount: video.stats?.playCount || 0,\n                diggCount: video.stats?.diggCount || 0,\n                shareCount: video.stats?.shareCount || 0,\n                commentCount: video.stats?.commentCount || 0\n              },\n              music: video.music?.title || '',\n              hashtags: video.textExtra?.filter(item => item.hashtagName).map(item => item.hashtagName) || []\n            });\n          }\n        }\n      });\n    }\n  } catch (error) {\n    console.log('Error parsing TikTok data:', error.message);\n  }\n}\n\n// Nếu không tìm thấy dữ liệu, tạo entry trống để ghi log\nif (posts.length === 0) {\n  posts.push({\n    id: 'NO_DATA',\n    desc: 'Không tìm thấy bài đăng nào cho ngày ' + targetDate,\n    createTime: new Date().toISOString(),\n    url: 'N/A',\n    stats: { playCount: 0, diggCount: 0, shareCount: 0, commentCount: 0 },\n    music: '',\n    hashtags: []\n  });\n}\n\nreturn posts.map(post => ({ json: post }));"
+      },
+      "id": "35b5e8f1-ff1c-4929-a70d-9fbfd0286a08",
+      "name": "Parse TikTok Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        460,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "YOUR_GOOGLE_SHEET_ID",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "options": {}
+      },
+      "id": "e8fd2999-2d53-440e-a547-ed6fb23c0e1c",
+      "name": "Save to Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [
+        680,
+        -200
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition_error",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "NO_DATA",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "90d2c372-de6c-4d81-9358-5288393873f4",
+      "name": "Check for Errors",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        460,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "text": "⚠️ TikTok Workflow Alert: Không thể lấy dữ liệu từ @dau_dau480 cho ngày {{ $('Calculate Yesterday Date').first().json.targetDate }}. Vui lòng kiểm tra lại.",
+        "otherOptions": {}
+      },
+      "id": "9a42a9d5-9495-4dca-8406-e976f8b37bce",
+      "name": "Send Error Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [
+        680,
+        100
+      ],
+      "webhookId": "9a885fb8-2328-4c6a-b9d7-833ce2f54a86"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-08-11T02:11:27.209Z",
+      "updatedAt": "2025-08-11T02:11:27.209Z",
+      "role": "workflow:owner",
+      "workflowId": "AIJpPTXY381qs7kU",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-11-30T08:27:41.000Z",
+  "versionId": "380fd55d-83e1-4509-8eaa-bb2b12d5ae55"
+}
