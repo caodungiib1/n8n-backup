@@ -1,0 +1,2068 @@
+{
+  "active": true,
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Form",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets15": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request8": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets16": {
+      "main": [
+        [
+          {
+            "node": "If3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [
+          {
+            "node": "Form2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Form1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets17": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Form3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On form submission1": {
+      "main": [
+        [
+          {
+            "node": "Form4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form5": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets18",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets18": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets20",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request9": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets19": {
+      "main": [
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "Form6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Form5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets19",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets20": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "Form7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On form submission2": {
+      "main": [
+        [
+          {
+            "node": "Form8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form8": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets21": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets23",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request10": {
+      "main": [
+        [
+          {
+            "node": "Code9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets22": {
+      "main": [
+        [
+          {
+            "node": "If5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If5": {
+      "main": [
+        [
+          {
+            "node": "Form10",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Google Sheets21",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code9": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets22",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets23": {
+      "main": [
+        [
+          {
+            "node": "Code10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code10": {
+      "main": [
+        [
+          {
+            "node": "Form11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets10": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request7": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets14": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Form12",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Form9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets13": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Form13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On form submission3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Form9": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-05-16T17:24:40.296Z",
+  "id": "yNY04JPmZGJWnKcY",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Đăng Bài Facebook Page",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Tự Động Đăng Bài Trên Nền Tảng Facebook",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Nên Tảng Lấy Ở Nền Tảng Nào",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Tiktok"
+                  }
+                ]
+              },
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "buttonLabel": "Tiếp Tục"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -520,
+        -1040
+      ],
+      "id": "9f54c02d-4b96-4cf6-9d54-67e960253d47",
+      "name": "On form submission",
+      "webhookId": "987d7a05-147a-4403-bd33-d7e02a9d8de4"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Video Tiktok",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        -1040
+      ],
+      "id": "80b020ca-de3d-432e-a698-4c96722b1334",
+      "name": "Form",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Sản Phẩm Trên Shopee",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        -1020
+      ],
+      "id": "cb8f80ce-23b1-415d-8587-18146c44bc3b",
+      "name": "Form1",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Trung Với 1 Video Đã Có Trong Bài Đăng Rồi !!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        -1180
+      ],
+      "id": "73ad73ef-a803-443b-8ce9-e76c4ea1c93a",
+      "name": "Form2",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Tông Hợp",
+        "completionMessage": "=Bạn Đăng Có Tổng: {{ $json.total }}\nSố Bài Chưa Đăng: {{ $json.chua_dang }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1820,
+        -1020
+      ],
+      "id": "fb8857d8-11e3-4667-bc99-a78290a3230a",
+      "name": "Form3",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Bài Đăng Page",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Video Tiktok": "=https://www.tiktok.com/@{{ $('HTTP Request8').item.json.data.author.unique_id }}/video/{{ $('HTTP Request8').item.json.data.id }}",
+            "Content Mẫu": "={{ $('HTTP Request8').item.json.data.title }}",
+            "Trạng Thái Đăng": "Chưa Đăng",
+            "Dạng Nội Dung": "={{ $('Code5').item.json.videoType }}",
+            "Link Hình Ảnh Hoặc Video": "={{ $('HTTP Request8').item.json.data.play }}",
+            "Trạng Thái Bình Luận": "Chưa Bình Luận",
+            "Link Shopee": "={{ $('Form1').item.json['Link Sản Phẩm Trên Shopee'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1240,
+        -1020
+      ],
+      "id": "72fee66b-293e-4b02-9a59-e3cfa5d14121",
+      "name": "Google Sheets15",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://tikwm.com/api/?url={{ $('Form').item.json['Link Video Tiktok'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        -1040
+      ],
+      "id": "8fbe6b62-2aed-464a-9ee2-dee084d1c2f1",
+      "name": "HTTP Request8"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Bài Đăng Page",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Video Tiktok",
+              "lookupValue": "=https://www.tiktok.com/@{{ $('HTTP Request8').item.json.data.author.unique_id }}/video/{{ $('HTTP Request8').item.json.data.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        520,
+        -1040
+      ],
+      "id": "2be4a81b-c482-484e-ac3e-bbb5e5c657df",
+      "name": "Google Sheets16",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "854dd026-7683-4ead-b342-d152cde40a13",
+              "leftValue": "={{ $json['Link Video Tiktok'] }}",
+              "rightValue": "Nhập link sản phẩm cho video này nhé",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        780,
+        -1040
+      ],
+      "id": "b28abd5a-f739-4932-a230-36933b1f11b4",
+      "name": "If3"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy item đầu tiên (hoặc lặp nếu nhiều item)\nconst items = [];\n\nfor (const item of $input.all()) {\n  const duration = item.json.data?.duration;\n\n  let videoType = 'Không xác định';\n\n  if (duration > 90) {\n    videoType = 'Video Watch';\n  } else {\n    videoType = 'Video Reels';\n  }\n\n  items.push({\n    json: {\n      duration,\n      videoType,\n    }\n  });\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        -1040
+      ],
+      "id": "ca5a8bb0-3d43-4157-a377-a15a4b474db3",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Bài Đăng Page",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1440,
+        -1020
+      ],
+      "id": "8b743a91-c0e7-477f-a0d9-e36647ae9d35",
+      "name": "Google Sheets17",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "let count = 0;\nlet total = items.length;\n\nfor (const item of items) {\n  const status = item.json[\"Trạng Thái Đăng\"];\n\n  // Kiểm tra xem status có phải kiểu string không trước khi gọi toLowerCase\n  if (typeof status === \"string\" && status.toLowerCase().trim() === \"chưa đăng\") {\n    count++;\n  }\n}\n\nreturn [\n  {\n    json: {\n      total: total,\n      chua_dang: count\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1640,
+        -1020
+      ],
+      "id": "90f98161-b621-4eea-9125-1416310895c7",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "formTitle": "Tự Động Đăng Bài Trên Nền Tảng Facebook",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Nên Tảng Lấy Ở Nền Tảng Nào",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Tiktok"
+                  }
+                ]
+              },
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "buttonLabel": "Tiếp Tục"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -520,
+        -620
+      ],
+      "id": "228d4f8c-cdf5-47a2-bcd9-c20f5df0e71f",
+      "name": "On form submission1",
+      "webhookId": "dc5bfe3d-c18a-4601-8800-8baf9eb745b2"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Video Tiktok",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        -620
+      ],
+      "id": "3de342aa-462a-4b5d-8a8b-83c162fb1805",
+      "name": "Form4",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Sản Phẩm Trên Shopee",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        -600
+      ],
+      "id": "8bc88945-baab-4b4e-800f-c7a864ba0fda",
+      "name": "Form5",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Trung Với 1 Video Đã Có Trong Bài Đăng Rồi !!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        -760
+      ],
+      "id": "ed446487-ab5e-486c-9d22-aec9e6e32ce2",
+      "name": "Form6",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Tông Hợp",
+        "completionMessage": "=Bạn Đăng Có Tổng: {{ $json.total }}\nSố Bài Chưa Đăng: {{ $json.chua_dang }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1820,
+        -600
+      ],
+      "id": "fd0b7742-26fb-4a50-9e78-fff943f1b769",
+      "name": "Form7",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2147251481,
+          "mode": "list",
+          "cachedResultName": "Quần Áo Nữ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=2147251481"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Video Tiktok": "=https://www.tiktok.com/@{{ $('HTTP Request9').item.json.data.author.unique_id }}/video/{{ $('HTTP Request9').item.json.data.id }}",
+            "Content Mẫu": "={{ $('HTTP Request9').item.json.data.title }}",
+            "Trạng Thái Đăng": "Chưa Đăng",
+            "Dạng Nội Dung": "={{ $('Code7').item.json.videoType }}",
+            "Link Hình Ảnh Hoặc Video": "={{ $('HTTP Request9').item.json.data.play }}",
+            "Trạng Thái Bình Luận": "Chưa Bình Luận",
+            "Link Shopee": "={{ $('Form5').item.json['Link Sản Phẩm Trên Shopee'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1240,
+        -600
+      ],
+      "id": "a1ca0fc5-9961-4a94-b784-606e68bf740b",
+      "name": "Google Sheets18",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://tikwm.com/api/?url={{ $('Form4').item.json['Link Video Tiktok'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        -620
+      ],
+      "id": "10beb1d6-74ef-4dcf-9764-625c2fd7635e",
+      "name": "HTTP Request9"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2147251481,
+          "mode": "list",
+          "cachedResultName": "Quần Áo Nữ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=2147251481"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Video Tiktok",
+              "lookupValue": "=https://www.tiktok.com/@{{ $('HTTP Request9').item.json.data.author.unique_id }}/video/{{ $('HTTP Request9').item.json.data.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        520,
+        -620
+      ],
+      "id": "7f5e2729-f5df-4108-b0ec-733a42223951",
+      "name": "Google Sheets19",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "854dd026-7683-4ead-b342-d152cde40a13",
+              "leftValue": "={{ $json['Link Video Tiktok'] }}",
+              "rightValue": "Nhập link sản phẩm cho video này nhé",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        780,
+        -620
+      ],
+      "id": "0e5ad8d1-fd28-4856-9deb-a03a99454534",
+      "name": "If4"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy item đầu tiên (hoặc lặp nếu nhiều item)\nconst items = [];\n\nfor (const item of $input.all()) {\n  const duration = item.json.data?.duration;\n\n  let videoType = 'Không xác định';\n\n  if (duration > 90) {\n    videoType = 'Video Watch';\n  } else {\n    videoType = 'Video Reels';\n  }\n\n  items.push({\n    json: {\n      duration,\n      videoType,\n    }\n  });\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        -620
+      ],
+      "id": "348c8055-764d-4692-83a8-8b76ead4cf97",
+      "name": "Code7"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2147251481,
+          "mode": "list",
+          "cachedResultName": "Quần Áo Nữ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=2147251481"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1440,
+        -600
+      ],
+      "id": "23465590-30db-4864-8980-968824a3bf27",
+      "name": "Google Sheets20",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "let count = 0;\nlet total = items.length;\n\nfor (const item of items) {\n  const status = item.json[\"Trạng Thái Đăng\"];\n\n  // Kiểm tra xem status có phải kiểu string không trước khi gọi toLowerCase\n  if (typeof status === \"string\" && status.toLowerCase().trim() === \"chưa đăng\") {\n    count++;\n  }\n}\n\nreturn [\n  {\n    json: {\n      total: total,\n      chua_dang: count\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1640,
+        -600
+      ],
+      "id": "fc942dff-2427-4db2-9b6a-32e108424b46",
+      "name": "Code8"
+    },
+    {
+      "parameters": {
+        "formTitle": "Tự Động Đăng Bài Trên Nền Tảng Facebook",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Nên Tảng Lấy Ở Nền Tảng Nào",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Tiktok"
+                  }
+                ]
+              },
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "buttonLabel": "Tiếp Tục"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -520,
+        -140
+      ],
+      "id": "572d3dbf-9e25-4d3b-9680-c632eed2b786",
+      "name": "On form submission2",
+      "webhookId": "191a6d53-f99a-47c9-a4dd-86e25e4daa71"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Video Tiktok",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        -140
+      ],
+      "id": "c33dc618-a78b-4bab-81f2-da04d0274001",
+      "name": "Form8",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Trung Với 1 Video Đã Có Trong Bài Đăng Rồi !!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1020,
+        -280
+      ],
+      "id": "c4e03bd7-c765-4385-b1c7-d8d7c10b1a23",
+      "name": "Form10",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Tông Hợp",
+        "completionMessage": "=Bạn Đăng Có Tổng: {{ $json.total }}\nSố Bài Chưa Đăng: {{ $json.chua_dang }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1640,
+        -120
+      ],
+      "id": "82e3ccfd-6e6c-4946-bdeb-4b6927d3d889",
+      "name": "Form11",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 458827882,
+          "mode": "list",
+          "cachedResultName": "Video Mẹo Vặt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=458827882"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Video Tiktok": "=https://www.tiktok.com/@{{ $('HTTP Request10').item.json.data.author.unique_id }}/video/{{ $('HTTP Request10').item.json.data.id }}",
+            "Content Mẫu": "={{ $('HTTP Request10').item.json.data.title }}",
+            "Trạng Thái Đăng": "Chưa Đăng",
+            "Dạng Nội Dung": "={{ $('Code9').item.json.videoType }}",
+            "Link Hình Ảnh Hoặc Video": "={{ $('HTTP Request10').item.json.data.play }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1060,
+        -120
+      ],
+      "id": "343a4146-e523-40d0-9e8a-52279f56e5ca",
+      "name": "Google Sheets21",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://tikwm.com/api/?url={{ $('Form8').item.json['Link Video Tiktok'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        -140
+      ],
+      "id": "2f80c7ea-bc0a-4f5b-8d2f-1fc441b913d0",
+      "name": "HTTP Request10"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 458827882,
+          "mode": "list",
+          "cachedResultName": "Video Mẹo Vặt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=458827882"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Video Tiktok",
+              "lookupValue": "=https://www.tiktok.com/@{{ $('HTTP Request10').item.json.data.author.unique_id }}/video/{{ $('HTTP Request10').item.json.data.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        520,
+        -140
+      ],
+      "id": "5f63c3ed-20e8-4bcd-82bd-30a9e3d81f72",
+      "name": "Google Sheets22",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "854dd026-7683-4ead-b342-d152cde40a13",
+              "leftValue": "={{ $json['Link Video Tiktok'] }}",
+              "rightValue": "Nhập link sản phẩm cho video này nhé",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        780,
+        -140
+      ],
+      "id": "75186d76-4159-4e7d-bca3-264b436e8181",
+      "name": "If5"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy item đầu tiên (hoặc lặp nếu nhiều item)\nconst items = [];\n\nfor (const item of $input.all()) {\n  const duration = item.json.data?.duration;\n\n  let videoType = 'Không xác định';\n\n  if (duration > 90) {\n    videoType = 'Video Watch';\n  } else {\n    videoType = 'Video Reels';\n  }\n\n  items.push({\n    json: {\n      duration,\n      videoType,\n    }\n  });\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        -140
+      ],
+      "id": "c7552cbb-4131-4fb2-a3f8-4ccf7dbd3706",
+      "name": "Code9"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 458827882,
+          "mode": "list",
+          "cachedResultName": "Video Mẹo Vặt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=458827882"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1260,
+        -120
+      ],
+      "id": "91978c88-66d0-4086-83d6-c9e09b3bfb47",
+      "name": "Google Sheets23",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "let count = 0;\nlet total = items.length;\n\nfor (const item of items) {\n  const status = item.json[\"Trạng Thái Đăng\"];\n\n  // Kiểm tra xem status có phải kiểu string không trước khi gọi toLowerCase\n  if (typeof status === \"string\" && status.toLowerCase().trim() === \"chưa đăng\") {\n    count++;\n  }\n}\n\nreturn [\n  {\n    json: {\n      total: total,\n      chua_dang: count\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1460,
+        -120
+      ],
+      "id": "f5651d3c-d0b6-4fee-bd79-46f38c8c515f",
+      "name": "Code10"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1795023390,
+          "mode": "list",
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Video Tiktok": "=https://www.tiktok.com/@{{ $('HTTP Request7').item.json.data.author.unique_id }}/video/{{ $('HTTP Request7').item.json.data.id }}",
+            "Content Mẫu": "={{ $('HTTP Request7').item.json.data.title }}",
+            "Trạng Thái Đăng": "Chưa Đăng",
+            "Dạng Nội Dung": "={{ $('Code').item.json.videoType }}",
+            "Link Hình Ảnh Hoặc Video": "={{ $('HTTP Request7').item.json.data.play }}",
+            "Trạng Thái Bình Luận": "Chưa Bình Luận",
+            "Link Shopee": "={{ $('Form9').item.json['Link Sản Phẩm Trên Shopee'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        960,
+        280
+      ],
+      "id": "5420639f-37e1-4aa0-9101-050a153bc8df",
+      "name": "Google Sheets10",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://tikwm.com/api/?url={{ $('On form submission3').item.json['Link Video Tiktok'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -280,
+        260
+      ],
+      "id": "4f03e686-8dee-430c-bace-fa11e57f80be",
+      "name": "HTTP Request7"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1795023390,
+          "mode": "list",
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Video Tiktok",
+              "lookupValue": "=https://www.tiktok.com/@{{ $('HTTP Request7').item.json.data.author.unique_id }}/video/{{ $('HTTP Request7').item.json.data.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        240,
+        260
+      ],
+      "id": "f21549f7-235b-445e-8029-db955260d0c3",
+      "name": "Google Sheets14",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "854dd026-7683-4ead-b342-d152cde40a13",
+              "leftValue": "={{ $json['Link Video Tiktok'] }}",
+              "rightValue": "Nhập link sản phẩm cho video này nhé",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        500,
+        260
+      ],
+      "id": "aef10c8d-8c24-492b-b363-29a525b96f1e",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy item đầu tiên (hoặc lặp nếu nhiều item)\nconst items = [];\n\nfor (const item of $input.all()) {\n  const duration = item.json.data?.duration;\n\n  let videoType = 'Không xác định';\n\n  if (duration > 90) {\n    videoType = 'Video Watch';\n  } else {\n    videoType = 'Video Reels';\n  }\n\n  items.push({\n    json: {\n      duration,\n      videoType,\n    }\n  });\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        260
+      ],
+      "id": "b87562f4-a383-486f-8aac-d7f611cbee95",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1795023390,
+          "mode": "list",
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1160,
+        280
+      ],
+      "id": "50efab6a-dc17-49a6-a687-95ff8be47307",
+      "name": "Google Sheets13",
+      "credentials": {
+        "googleApi": {
+          "id": "xWSmmGGfnRVMBnSN",
+          "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "let count = 0;\nlet total = items.length;\n\nfor (const item of items) {\n  const status = item.json[\"Trạng Thái Đăng\"];\n\n  // Kiểm tra xem status có phải kiểu string không trước khi gọi toLowerCase\n  if (typeof status === \"string\" && status.toLowerCase().trim() === \"chưa đăng\") {\n    count++;\n  }\n}\n\nreturn [\n  {\n    json: {\n      total: total,\n      chua_dang: count\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1360,
+        280
+      ],
+      "id": "3afe44e5-c65c-4639-9882-06f65d99b721",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "formTitle": "Tự Động Đăng Bài Trên Nền Tảng Facebook",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Video Tiktok",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "buttonLabel": "Tiếp Tục"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -500,
+        260
+      ],
+      "id": "26b872f2-9629-42ce-a132-bd88805670e9",
+      "name": "On form submission3",
+      "webhookId": "c89c85e2-9221-4cb0-a66e-b6b1633dc34c"
+    },
+    {
+      "parameters": {
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Link Sản Phẩm Trên Shopee",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        740,
+        280
+      ],
+      "id": "2ffce1ff-6e8b-4f8d-a3c4-95ebb1c42fd3",
+      "name": "Form9",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Trung Với 1 Video Đã Có Trong Bài Đăng Rồi !!",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        740,
+        120
+      ],
+      "id": "785cf72c-7c9d-417f-851e-1d344e66a488",
+      "name": "Form12",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "completionTitle": "Tông Hợp",
+        "completionMessage": "=Bạn Đăng Có Tổng: {{ $json.total }}\nSố Bài Chưa Đăng: {{ $json.chua_dang }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        1540,
+        280
+      ],
+      "id": "c95f9f06-afec-43e0-930c-3588c1c4a5c7",
+      "name": "Form13",
+      "webhookId": "aef32409-e79d-45b2-97d5-fbb60561cf8b"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-05-16T17:24:40.306Z",
+      "updatedAt": "2025-05-16T17:24:40.306Z",
+      "role": "workflow:owner",
+      "workflowId": "yNY04JPmZGJWnKcY",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    }
+  },
+  "tags": [],
+  "triggerCount": 4,
+  "updatedAt": "2025-07-03T14:37:06.000Z",
+  "versionId": "870553cb-5321-4bbf-92bb-e6f058566c49"
+}
