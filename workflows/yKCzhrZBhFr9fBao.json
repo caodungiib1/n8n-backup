@@ -1,0 +1,225 @@
+{
+  "active": true,
+  "connections": {
+    "AI Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond to Webhook1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Nhắn Tin": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "createdAt": "2025-10-29T07:23:18.250Z",
+  "id": "yKCzhrZBhFr9fBao",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Bot Chát",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.entry[0].messaging[0].message.text }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        40,
+        280
+      ],
+      "id": "dcbf1376-59c0-4114-a889-941ab873062a",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        0,
+        480
+      ],
+      "id": "bf01c1ee-3c38-43f4-bb79-06b289b95c42",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "TdsIzXvOvDSXd52Q",
+          "name": "Google Gemini AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "webhook-meta-messeger",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -520,
+        260
+      ],
+      "id": "175455ed-2f9b-4ca2-935e-de22beff5d3e",
+      "name": "Webhook",
+      "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query['hub.challenge'] }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {}
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -200,
+        80
+      ],
+      "id": "a66ee30e-14a0-43ee-9792-70eb232db2c9",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -200,
+        280
+      ],
+      "id": "4ca07f5c-d29d-4ff7-aa9a-68e2b2ee1b27",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v24.0/me/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAZAvfVmpgz8BP7BxTBKfaDJie3GKLUeEIcsqhFbZC4mFV6NNJUXYS5uTdZAq3CdhFM5YrrZBRHiphq5czNlFPxuWqKL5zZCJDe2CClduIBLvrsVUy4ZCukpZCLYY8PkS8d7QGLq7F5wJHKdFkpGPJzbNoifZBEpx3VLZB9shLpYTMETRMzC7tEo8DIelRoHiM4I1PycCz5pg4BhG6M3wLmHgNAZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": { \"id\": \"{{ $('Webhook').item.json.body.entry[0].messaging[0].sender.id }}\" },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Bạn vui lòng bấm vào nút bên dưới đế điền thông tin đặt đơn hàng nhé ạ!!!\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"https://apaniche.vn/checkout?add-to-cart=37895\",\n            \"title\": \"Đặt Hàng Ngay\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        520,
+        80
+      ],
+      "id": "199650de-fe90-427e-8bb5-299e1737dd47",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v24.0/me/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAZAvfVmpgz8BP7BxTBKfaDJie3GKLUeEIcsqhFbZC4mFV6NNJUXYS5uTdZAq3CdhFM5YrrZBRHiphq5czNlFPxuWqKL5zZCJDe2CClduIBLvrsVUy4ZCukpZCLYY8PkS8d7QGLq7F5wJHKdFkpGPJzbNoifZBEpx3VLZB9shLpYTMETRMzC7tEo8DIelRoHiM4I1PycCz5pg4BhG6M3wLmHgNAZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"id\": \" {{ $('Webhook').item.json.body.entry[0].messaging[0].sender.id }} \"\n  },\n  \"messaging_type\": \"RESPONSE\",\n  \"message\": {\n    \"text\": {{ JSON.stringify($json.output) }}\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        -160
+      ],
+      "id": "7cc11ec7-5c8c-4dd5-b71c-02b81e0599c4",
+      "name": "Nhắn Tin"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-10-29T07:23:18.254Z",
+      "updatedAt": "2025-10-29T07:23:18.254Z",
+      "role": "workflow:owner",
+      "workflowId": "yKCzhrZBhFr9fBao",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-11-03T03:22:46.000Z",
+  "versionId": "21bee49b-2144-45be-9a8b-aa90b9624e5c"
+}
