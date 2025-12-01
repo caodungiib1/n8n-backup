@@ -1,0 +1,88 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-12-01T10:31:58.413Z",
+  "id": "VoVqiioeRlgwGh4O",
+  "isArchived": false,
+  "meta": null,
+  "name": "My workflow 38",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "e4b7231e-9514-4bcf-8dc1-7ee59ccb6f05",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://open.tikapi.io/api/v2/user/info?username=",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "cursor",
+              "value": "0"
+            },
+            {
+              "name": "count",
+              "value": "30"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer DeSba7IZTNFlxh4MeW6vUJ1oPLjHoaCcmcVhMTQvToxZXaWx"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "ba38457d-6722-4105-afb5-e092678ea5ea",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-12-01T10:31:58.419Z",
+      "updatedAt": "2025-12-01T10:31:58.419Z",
+      "role": "workflow:owner",
+      "workflowId": "VoVqiioeRlgwGh4O",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-12-01T10:31:58.413Z",
+  "versionId": "c2143866-957d-44d6-9b5f-3b5be1364742"
+}
