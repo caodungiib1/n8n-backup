@@ -1,0 +1,79 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-12-05T01:46:31.509Z",
+  "id": "GePwtYI1fjN1Ykx2",
+  "isArchived": false,
+  "meta": null,
+  "name": "My workflow 39",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "2e987034-cfe2-4498-a949-8681fe9a2470",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v24.0/603490756190502/messages",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "EAAL2gM8wFYsBQK5cprnb401iNstRwcZB2ZAGhaO8al7VagbESRuYfNjhAsoIbypYZBq6NBQcnlmdZBhNDcRxBHPPZApuNLTOUpmXWcvii2eDfZBMVZCAeaqjTtbZCEwZC4qEnmRdONzVa8nTpxkNj4ZB83OPYV0zxYvVveVTXmg9InWyaSa82sQ7ZC00XW8Wb9b3ELkAddJ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"122146431314899911_1325972062560057\"\n  },\n  \"message\": {\n    \"text\": \"Xin chào, Mình nhắn cho bạn từ Tiện Ích Mọi Nhà\"\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "90958bef-04bf-44dc-8ab7-e76751e137ba",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-12-05T01:46:31.514Z",
+      "updatedAt": "2025-12-05T01:46:31.514Z",
+      "role": "workflow:owner",
+      "workflowId": "GePwtYI1fjN1Ykx2",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-12-05T02:33:56.000Z",
+  "versionId": "60004a53-e8a5-4d17-b8a0-f4e793449243"
+}
