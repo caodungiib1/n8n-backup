@@ -24,7 +24,7 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        0,
+        192,
         0
       ],
       "id": "2e987034-cfe2-4498-a949-8681fe9a2470",
@@ -45,13 +45,13 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào {{ $('Webhook1').item.json.body.entry[0].changes[0].value.from.name }}, Mình gửi bạn thông tin sản phẩm nhé 👇️\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets').item.json['Link Shopee'] }}\",\n            \"title\": \"👉 Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"https://graph.facebook.com/v24.0/122146431314899911_1731244174925946\"\n  },\n  \"message\": {\n    \"text\": \"Chào bạn, mình gửi bạn link sản phẩm nhé:\\n\\n https://s.shopee.vn/7KpUTLDL2W?fb=9pqayp\"\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        208,
+        416,
         0
       ],
       "id": "90958bef-04bf-44dc-8ab7-e76751e137ba",
@@ -74,6 +74,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-12-05T14:21:59.000Z",
-  "versionId": "953176f4-33f1-4855-a5b2-5de9997653d2"
+  "updatedAt": "2025-12-05T15:35:34.000Z",
+  "versionId": "e2364c26-1eb3-4a97-b72e-5caa9beb26cc"
 }
