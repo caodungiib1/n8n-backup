@@ -45,7 +45,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"122146431314899911_1325972062560057\"\n  },\n  \"message\": {\n    \"text\": \"Xin chào, Mình nhắn cho bạn từ Tiện Ích Mọi Nhà\"\n  }\n}",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào {{ $('Webhook1').item.json.body.entry[0].changes[0].value.from.name }}, Mình gửi bạn thông tin sản phẩm nhé 👇️\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets').item.json['Link Shopee'] }}\",\n            \"title\": \"👉 Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -74,6 +74,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-12-05T02:33:56.000Z",
-  "versionId": "60004a53-e8a5-4d17-b8a0-f4e793449243"
+  "updatedAt": "2025-12-05T14:21:59.000Z",
+  "versionId": "953176f4-33f1-4855-a5b2-5de9997653d2"
 }
