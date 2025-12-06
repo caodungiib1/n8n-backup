@@ -56,6 +56,33 @@
       ],
       "id": "90958bef-04bf-44dc-8ab7-e76751e137ba",
       "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v22.0/603490756190502/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer EAAL2gM8wFYsBQK5cprnb401iNstRwcZB2ZAGhaO8al7VagbESRuYfNjhAsoIbypYZBq6NBQcnlmdZBhNDcRxBHPPZApuNLTOUpmXWcvii2eDfZBMVZCAeaqjTtbZCEwZC4qEnmRdONzVa8nTpxkNj4ZB83OPYV0zxYvVveVTXmg9InWyaSa82sQ7ZC00XW8Wb9b3ELkAddJ"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"id\": \"25914579018145456\"\n  },\n  \"messaging_type\": \"RESPONSE\",\n  \"message\": {\n    \"text\": \"Chào bạn, mình gửi bạn link sản phẩm nhé:\",\n    \"quick_replies\": [\n      {\n        \"content_type\": \"text\",\n        \"title\": \"👉 Xem giỏ hàng\",\n        \"payload\": \"BAM_VAO_GIO_HANG\"\n      }\n    ]\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        672,
+        -96
+      ],
+      "id": "624e6d3c-089b-4f7e-bc7d-4a319bfe0da3",
+      "name": "HTTP Request4"
     }
   ],
   "pinData": {},
@@ -74,6 +101,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-12-05T15:35:34.000Z",
-  "versionId": "e2364c26-1eb3-4a97-b72e-5caa9beb26cc"
+  "updatedAt": "2025-12-06T06:32:32.000Z",
+  "versionId": "9e62aec3-dd37-4ca3-bc75-cd757a694f06"
 }
