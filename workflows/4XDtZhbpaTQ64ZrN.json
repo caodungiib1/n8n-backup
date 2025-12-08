@@ -1,0 +1,320 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Account": {
+      "main": [
+        [
+          {
+            "node": "Account name",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "Check Account",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Account name": {
+      "main": [
+        [
+          {
+            "node": "Campaigns",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Campaigns": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Campaigns1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Campaigns1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-12-08T09:21:17.946Z",
+  "id": "4XDtZhbpaTQ64ZrN",
+  "isArchived": false,
+  "meta": null,
+  "name": "Ads Facebook",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "7dd53f27-8f38-467e-9932-c2d96e7df788",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Check Account').item.json.body.adaccounts.data[3].id }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,amount_spent,balance,currency,account_status"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set').item.json.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        624,
+        0
+      ],
+      "id": "c300cd31-8314-493a-b24a-d198cebf4a51",
+      "name": "Account name"
+    },
+    {
+      "parameters": {
+        "url": "https://graph.facebook.com/v24.0/me",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "adaccounts{name,id,account_status}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set').item.json.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "2de41455-fa68-44fc-be0a-34441f882962",
+      "name": "Check Account"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cb20327e-7353-4d15-928e-c1e9ff39fe66",
+              "name": "access_token",
+              "value": "EAAV33vJhyfgBPmupZAvaY2mik8eWrWFIYUVZAzG6JOxJ9AfCI9j9OnFRNkZCqh1IMa59T8ZBrmU8kNNRsKjG56QxXsZCAnZC1iZAioJ5SVrfrCxgqC8MkVzkMJaLWVzK2jdNH7jUompqJNwIflfZBSqwzjkbtrTq6quawxBmoFYn4ahCKOR8Gj98QQ7M4yj7MPE1a6vWO8WoedqxmaGBs3jZCr2YT",
+              "type": "string"
+            },
+            {
+              "id": "723ae16f-9ce6-40a2-a6a7-8a7c19e331c6",
+              "name": "since",
+              "value": "2025-12-05",
+              "type": "string"
+            },
+            {
+              "id": "19a821b0-ea09-4d5a-a4a6-3ac6d7774705",
+              "name": "until",
+              "value": "2025-12-05",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "07fb76d1-c85d-46e8-a463-ee9742be5ef3",
+      "name": "Set"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Check Account').item.json.body.adaccounts.data[3].id }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "campaigns{name}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set').item.json.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        832,
+        0
+      ],
+      "id": "90274afc-1a1a-4bc9-92d8-af58742c0be7",
+      "name": "Campaigns"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $json.id }}/insights",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('Set').item.json.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1536,
+        160
+      ],
+      "id": "6be796a7-33a5-4e94-b981-aac42f139a8e",
+      "name": "Campaigns1"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "body.campaigns.data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        0
+      ],
+      "id": "e6436631-4e91-43b6-8506-d3436955b8e5",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1248,
+        0
+      ],
+      "id": "4db97345-9d03-4d3c-a332-7090acd39494",
+      "name": "Loop Over Items"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-12-08T09:21:17.952Z",
+      "updatedAt": "2025-12-08T09:21:17.952Z",
+      "role": "workflow:owner",
+      "workflowId": "4XDtZhbpaTQ64ZrN",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-12-08T10:49:54.000Z",
+  "versionId": "a7e7d3b7-2051-425c-ad9a-0eab78d79354"
+}
