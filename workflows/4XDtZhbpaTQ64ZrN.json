@@ -251,6 +251,18 @@
             {
               "name": "access_token",
               "value": "={{ $('Set').item.json.access_token }}"
+            },
+            {
+              "name": "fields",
+              "value": "campaign_name,adset_name,ad_name,campaign_id,ad_id,objective,reach,impressions,frequency,spend,clicks,website_ctr,cpc,ctr,cpm,cpp"
+            },
+            {
+              "name": "level",
+              "value": "ad"
+            },
+            {
+              "name": "time_range",
+              "value": "{\"since\":\"2025-12-05\",\"until\":\"2025-12-05\"}"
             }
           ]
         },
@@ -315,6 +327,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-12-08T10:49:54.000Z",
-  "versionId": "a7e7d3b7-2051-425c-ad9a-0eab78d79354"
+  "updatedAt": "2025-12-08T11:04:55.000Z",
+  "versionId": "fb881427-3545-4088-b888-8ca1060b0ebb"
 }
