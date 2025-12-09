@@ -1,0 +1,118 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Set",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-12-09T16:22:03.834Z",
+  "id": "rcti9MxYVgVXJ439",
+  "isArchived": false,
+  "meta": null,
+  "name": "My workflow 40",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "bd934fbc-2766-4dc1-897a-936e4fa72fcf",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "324ec432-6c7f-48a4-88fd-ccabff4db5f6",
+              "name": "project ID",
+              "value": "a9ebfcf3-5e1f-4123-b235-205fdcea0e8f",
+              "type": "string"
+            },
+            {
+              "id": "2244666f-4cdd-484b-959f-1caadfc67d02",
+              "name": "prompt",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "37d8a1d3-6680-4a61-bc7a-8554259b5812",
+      "name": "Set"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://aisandbox-pa.googleapis.com/v1/projects/{{ $json[\"project ID\"] }}/flowMedia:batchGenerateImages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"requests\": [\n        {\n            \"clientContext\": {\n                \"sessionId\": \";{{ new Date().getTime() }}\",\n                \"projectId\": \"{{ $json['project ID'] }}\",\n                \"tool\": \"PINHOLE\"\n            },\n            \"seed\": {{ Math.floor(Math.random() * 100000) }},\n            \"imageModelName\": \"GEM_PIX_2\",\n            \"imageAspectRatio\": \"IMAGE_ASPECT_RATIO_LANDSCAPE\",\n            \"prompt\": \"{{ $json.prompt }}\",\n            \"imageInputs\": []\n        }\n    ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "684a6e48-41eb-4d06-ac49-497ed1b65ea1",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "mYaq07vacxCuwKxM",
+          "name": "Bearer Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-12-09T16:22:03.838Z",
+      "updatedAt": "2025-12-09T16:22:03.838Z",
+      "role": "workflow:owner",
+      "workflowId": "rcti9MxYVgVXJ439",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-12-09T16:28:48.000Z",
+  "versionId": "536fed7b-98f2-4e6f-b2e3-f7eb8f719538"
+}
