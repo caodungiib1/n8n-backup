@@ -26,7 +26,7 @@
   },
   "createdAt": "2025-12-09T16:22:03.834Z",
   "id": "rcti9MxYVgVXJ439",
-  "isArchived": false,
+  "isArchived": true,
   "meta": null,
   "name": "My workflow 40",
   "nodes": [
@@ -113,6 +113,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2025-12-09T16:28:48.000Z",
-  "versionId": "536fed7b-98f2-4e6f-b2e3-f7eb8f719538"
+  "updatedAt": "2025-12-11T03:25:06.000Z",
+  "versionId": "0504a947-8e6d-403c-83c4-78109410c8e8"
 }
