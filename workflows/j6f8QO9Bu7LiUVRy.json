@@ -1,0 +1,408 @@
+{
+  "active": false,
+  "connections": {
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-12-29T03:35:25.407Z",
+  "id": "j6f8QO9Bu7LiUVRy",
+  "isArchived": false,
+  "meta": null,
+  "name": "Video Face Swap Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Video Face Swap",
+        "formDescription": "Tải ảnh và video ở dưới",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Image",
+              "fieldType": "file",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Video",
+              "fieldType": "file",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -160,
+        112
+      ],
+      "id": "dbc4930d-dbad-4f23-81bf-65778e6ee6b6",
+      "name": "On form submission",
+      "webhookId": "YOUR_WEBHOOK_ID"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0100f2ac-5e96-4045-9390-b5c8dab38ff4",
+              "name": "Image",
+              "value": "={{ $json.secure_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        384,
+        16
+      ],
+      "id": "734ccb68-4b9f-4d26-830c-1819c3d683f1",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        176,
+        16
+      ],
+      "id": "184da285-4c19-471b-85b8-c92fa59777e9",
+      "name": "Image"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        176,
+        256
+      ],
+      "id": "c5ccc57d-0625-4b5d-b2c9-b6b536229fbe",
+      "name": "Video"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0100f2ac-5e96-4045-9390-b5c8dab38ff4",
+              "name": "Video",
+              "value": "={{ $json.secure_url }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        384,
+        256
+      ],
+      "id": "23b133e6-e910-48fb-8c1b-ca824a6900d2",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        624,
+        320
+      ],
+      "id": "f277377d-a548-4946-ae92-c2bf316bf458",
+      "name": "Merge"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        960,
+        288
+      ],
+      "id": "cbf85aea-5044-43d2-a4f4-ac4db741c7ef",
+      "name": "HTTP Request1",
+      "credentials": {}
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1168,
+        288
+      ],
+      "id": "f7f221a1-d2b1-40b4-b4c3-079cf2997427",
+      "name": "Wait",
+      "webhookId": "YOUR_WEBHOOK_ID"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1392,
+        288
+      ],
+      "id": "8c30c1c4-a007-4c7b-a7c6-4ba8d4161e17",
+      "name": "HTTP Request2",
+      "credentials": {}
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1504,
+        144
+      ],
+      "id": "169ee4fa-cd78-4691-8874-1206f797f804",
+      "name": "If"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1728,
+        96
+      ],
+      "id": "d3809fae-c88b-46af-a2cb-684290e0afe0",
+      "name": "HTTP Request3",
+      "credentials": {}
+    },
+    {
+      "parameters": {
+        "content": "## Get Status",
+        "height": 336,
+        "width": 528
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1152,
+        112
+      ],
+      "typeVersion": 1,
+      "id": "99b25415-9961-4223-b17e-726894951ce1",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Get Video",
+        "height": 192,
+        "width": 160
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1696,
+        48
+      ],
+      "typeVersion": 1,
+      "id": "e2e9e6ef-2ce4-42aa-b1c6-2efc18cd5a1e",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Post Image-Video",
+        "height": 224
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        880,
+        224
+      ],
+      "typeVersion": 1,
+      "id": "4541ed46-2652-4ce1-a058-4109b85d89a6",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## WAN 2.2",
+        "height": 480,
+        "width": 1040,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        832,
+        32
+      ],
+      "typeVersion": 1,
+      "id": "fea0c171-e2c8-4ef6-85c7-6946207de8b7",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        896,
+        848
+      ],
+      "id": "2ae21a21-50e2-484a-be5e-afe0d240c32d",
+      "name": "HTTP Request4",
+      "credentials": {}
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1104,
+        848
+      ],
+      "id": "ce13aa26-6791-43f2-aacf-28d4d97fa52f",
+      "name": "Wait1",
+      "webhookId": "YOUR_WEBHOOK_ID"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1328,
+        848
+      ],
+      "id": "0bbf2330-c988-48f5-a1df-58e5c7cf22b6",
+      "name": "HTTP Request5",
+      "credentials": {}
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1568,
+        704
+      ],
+      "id": "b308f391-1fbd-4246-bf18-339a2b5d382d",
+      "name": "If1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1760,
+        656
+      ],
+      "id": "bcfbfb8d-9887-490f-9259-5198e2ff7ba4",
+      "name": "HTTP Request6",
+      "credentials": {}
+    },
+    {
+      "parameters": {
+        "content": "## KLING AI 2.6",
+        "height": 480,
+        "width": 1040,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        832,
+        640
+      ],
+      "typeVersion": 1,
+      "id": "0f2d2542-8ee2-491a-94f4-47a0b6d20435",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## Post Image-Video",
+        "height": 224,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        848,
+        800
+      ],
+      "typeVersion": 1,
+      "id": "fdf164fe-3a83-4c65-8bf2-40258976a48e",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## Get Status",
+        "height": 304,
+        "width": 608,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1104,
+        688
+      ],
+      "typeVersion": 1,
+      "id": "d40c3d3e-f89b-40c9-8391-8a8bcaf374b1",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "## Get Video",
+        "height": 240,
+        "width": 150,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1728,
+        624
+      ],
+      "typeVersion": 1,
+      "id": "26657ac8-0012-4fb0-9c8f-34c3723520a1",
+      "name": "Sticky Note7"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-12-29T03:35:25.413Z",
+      "updatedAt": "2025-12-29T03:35:25.413Z",
+      "role": "workflow:owner",
+      "workflowId": "j6f8QO9Bu7LiUVRy",
+      "projectId": "VvOpQREyNmeQDBZe"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2025-12-29T03:35:25.407Z",
+  "versionId": "4f7193d2-78d5-4458-a72b-be57a9ab6a9b"
+}
