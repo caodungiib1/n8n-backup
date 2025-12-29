@@ -718,8 +718,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        4580,
-        60
+        4592,
+        64
       ],
       "id": "37034556-619a-475f-bbfb-0af74b009d2a",
       "name": "AI Agent1"
@@ -755,7 +755,7 @@
       "typeVersion": 4.5,
       "position": [
         1840,
-        680
+        688
       ],
       "id": "57397170-ace7-4848-9c42-d8179870739a",
       "name": "Google Sheets",
@@ -794,8 +794,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2180,
-        680
+        2192,
+        688
       ],
       "id": "1503b102-7454-4865-a6e6-aad97a5df5df",
       "name": "If"
@@ -815,7 +815,7 @@
       "typeVersion": 1.2,
       "position": [
         2400,
-        1320
+        1328
       ],
       "id": "7cb0f229-e077-46e4-82b7-4da17d649aa0",
       "name": "Telegram",
@@ -840,7 +840,7 @@
       "typeVersion": 1.1,
       "position": [
         800,
-        -360
+        -368
       ],
       "id": "3f9104e4-59c5-42ae-8fde-2627ea7dfb86",
       "name": "Telegram Trigger",
@@ -999,8 +999,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1080,
-        -360
+        1088,
+        -368
       ],
       "id": "cbd64518-4b1c-4ae6-a853-b23caf368170",
       "name": "Google Sheets2",
@@ -1040,8 +1040,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5000,
-        60
+        5008,
+        64
       ],
       "id": "f744451c-d6cc-4df8-a00f-89cf305c8012",
       "name": "HTTP Request"
@@ -1193,8 +1193,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        2140,
-        1320
+        2144,
+        1328
       ],
       "id": "915b98ff-b3b3-404d-b75a-37e8f3a4859d",
       "name": "Google Sheets3",
@@ -1232,8 +1232,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3700,
-        60
+        3712,
+        64
       ],
       "id": "7ff84e12-0a5c-4eeb-ad2d-7939dba307ef",
       "name": "HTTP Request1"
@@ -1276,7 +1276,7 @@
       "typeVersion": 2.2,
       "position": [
         1600,
-        700
+        704
       ],
       "id": "215d6a0f-e352-429f-bfd4-644524a953ed",
       "name": "If1"
@@ -1298,21 +1298,20 @@
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        2500,
-        -20
+        2512,
+        -16
       ],
       "id": "6fec107f-041b-47a8-b377-d9389ba58235",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "lvCkbEQikxMvAqxJ",
-          "name": "Phân Tích"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -1344,7 +1343,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2980,
+        2992,
         -240
       ],
       "id": "024957e6-354f-4143-b017-8dd10cba3bd1",
@@ -1378,7 +1377,7 @@
       "typeVersion": 4.2,
       "position": [
         1600,
-        -360
+        -368
       ],
       "id": "29479282-6f75-4105-b8f3-9c3be284f6d9",
       "name": "HTTP Request3"
@@ -1413,8 +1412,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1340,
-        -360
+        1344,
+        -368
       ],
       "id": "58ce382a-b45d-4418-9167-1bc2682f7f61",
       "name": "Google Sheets1",
@@ -1436,8 +1435,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        1260,
-        700
+        1264,
+        704
       ],
       "id": "d4315e11-1e07-4b18-921e-d468b23a2364",
       "name": "Phân Tích"
@@ -1450,8 +1449,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
       "typeVersion": 1,
       "position": [
-        1300,
-        920
+        1312,
+        928
       ],
       "id": "2a7ce7d2-6eb9-4e1e-8c55-a8547a0cb674",
       "name": "Groq Chat Model",
@@ -1524,8 +1523,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1780,
-        1420
+        1792,
+        1424
       ],
       "id": "1488d36b-3791-4985-a8e4-fc292122e60d",
       "name": "If3"
@@ -1677,7 +1676,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        2140,
+        2144,
         1520
       ],
       "id": "707fc40d-cdc9-444d-a7f8-246d27e93044",
@@ -1696,8 +1695,8 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        2100,
-        -360
+        2112,
+        -368
       ],
       "id": "c0f06e67-6b6c-4d13-839d-722560d8f465",
       "name": "Loop Over Items"
@@ -1709,8 +1708,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1860,
-        -360
+        1872,
+        -368
       ],
       "id": "280b55c8-fed4-443d-af69-63fe3f962f75",
       "name": "Code"
@@ -1862,8 +1861,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        2540,
-        620
+        2544,
+        624
       ],
       "id": "3bbcdf07-9c5f-472d-a8f2-0ba9cad1a20d",
       "name": "Switch"
@@ -1877,29 +1876,28 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        4580,
-        380
+        4592,
+        384
       ],
       "id": "25f79848-506c-48ef-9a27-85f774cece37",
       "name": "AI Agent2"
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        4580,
+        4592,
         560
       ],
       "id": "1b5cdbd2-97ae-4746-bdcb-2ef469f6f778",
       "name": "Google Gemini Chat Model2",
       "credentials": {
         "googlePalmApi": {
-          "id": "TdsIzXvOvDSXd52Q",
-          "name": "Gia Dụng Giá Tốt - caodungiib1"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -1931,8 +1929,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        5000,
-        380
+        5008,
+        384
       ],
       "id": "a0b9a968-7fd9-4cdc-a48a-5e7fe1539929",
       "name": "HTTP Request4"
@@ -1964,8 +1962,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3720,
-        380
+        3728,
+        384
       ],
       "id": "2bb3369f-e82c-48af-afcf-c77e3b36ed31",
       "name": "HTTP Request5"
@@ -1980,28 +1978,27 @@
       "typeVersion": 1.8,
       "position": [
         4560,
-        680
+        688
       ],
       "id": "c00f45e9-57b1-4838-a78d-494c66657e38",
       "name": "AI Agent3"
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
         4560,
-        860
+        864
       ],
       "id": "b5bfa96c-5fbc-4cef-a8ca-178b5afde4f3",
       "name": "Google Gemini Chat Model3",
       "credentials": {
         "googlePalmApi": {
-          "id": "zBuRGolrlrdzJFK8",
-          "name": "Gia Dụng Mọi Nhà - caodungiib1"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -2033,8 +2030,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4980,
-        680
+        4992,
+        688
       ],
       "id": "4c6e8d13-6452-4c7d-996e-7f6b2168d490",
       "name": "HTTP Request6"
@@ -2066,8 +2063,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3720,
-        680
+        3728,
+        688
       ],
       "id": "ce12f980-9b3d-46c2-941d-55ee395a9f05",
       "name": "HTTP Request7"
@@ -2082,28 +2079,27 @@
       "typeVersion": 1.8,
       "position": [
         4560,
-        1000
+        1008
       ],
       "id": "5b83c1ac-ba27-4d9f-bb5d-338992e87fa1",
       "name": "AI Agent4"
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
         4560,
-        1180
+        1184
       ],
       "id": "7e2bfaa8-10a3-4585-936e-fdbb4221f8ae",
       "name": "Google Gemini Chat Model4",
       "credentials": {
         "googlePalmApi": {
-          "id": "UHS17LDfxjqxrprE",
-          "name": "Tạp Hoá Xanh - caodungiib1"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -2135,8 +2131,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4980,
-        1000
+        4992,
+        1008
       ],
       "id": "f29d44bd-840a-412a-a459-cdc93d63ffd9",
       "name": "HTTP Request8"
@@ -2168,8 +2164,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3720,
-        1000
+        3728,
+        1008
       ],
       "id": "7ef2f58e-2fe5-4cac-a010-8ef17998469e",
       "name": "HTTP Request9"
@@ -2184,28 +2180,27 @@
       "typeVersion": 1.8,
       "position": [
         4560,
-        1320
+        1328
       ],
       "id": "84c11311-d16a-4eaa-929e-9eb051048a81",
       "name": "AI Agent5"
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
         4560,
-        1500
+        1504
       ],
       "id": "1c6d14a7-7aa8-45bd-869d-f2b807513edb",
       "name": "Google Gemini Chat Model5",
       "credentials": {
         "googlePalmApi": {
-          "id": "L2ZprN9rN7Bd32kk",
-          "name": "Tổng Kho Gia Dụng - caodungiib1"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -2237,8 +2232,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4980,
-        1320
+        4992,
+        1328
       ],
       "id": "61fb7490-584d-4379-9ceb-628f0f2a4225",
       "name": "HTTP Request10"
@@ -2270,29 +2265,28 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3720,
-        1320
+        3728,
+        1328
       ],
       "id": "2d10d66a-fc11-4127-806f-a48214a89da9",
       "name": "HTTP Request11"
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        4580,
+        4592,
         240
       ],
       "id": "265480d6-bbe7-4ae8-834f-1c74ce341c16",
       "name": "Tiện Ích Mọi Nhà - caodungiib1",
       "credentials": {
         "googlePalmApi": {
-          "id": "TzISxgHu11Dqh9zB",
-          "name": "Tiện Ích Mọi Nhà - nhannguyenyb6868"
+          "id": "ui0ULTnV5CioljxV",
+          "name": "Rep Commet"
         }
       }
     },
@@ -2304,7 +2298,7 @@
       "typeVersion": 2,
       "position": [
         2000,
-        680
+        688
       ],
       "id": "ba1882f8-5135-4bfc-b33b-b4ae5f1a692e",
       "name": "Code1"
@@ -2330,8 +2324,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        60
+        3472,
+        64
       ],
       "id": "4076c120-1454-409d-8c64-14f5c6e798cc",
       "name": "Wait1",
@@ -2345,8 +2339,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        380
+        3472,
+        384
       ],
       "id": "2c1ab157-6ad4-4b99-874f-72d7e155f69c",
       "name": "Wait2",
@@ -2360,8 +2354,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        680
+        3472,
+        688
       ],
       "id": "ff9fd3f1-f142-4693-a400-e8b3a19926c5",
       "name": "Wait3",
@@ -2375,8 +2369,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        1000
+        3472,
+        1008
       ],
       "id": "d25a3ec1-aade-4949-a59c-66e14d3e6a21",
       "name": "Wait4",
@@ -2390,8 +2384,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        1320
+        3472,
+        1328
       ],
       "id": "0a84012e-5e2a-4023-b04d-7cbb0245f392",
       "name": "Wait5",
@@ -2420,8 +2414,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3900,
-        60
+        3904,
+        64
       ],
       "id": "876931b4-f9ab-41b1-8637-97f0262c50cb",
       "name": "HTTP Request15"
@@ -2433,8 +2427,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4100,
-        60
+        4112,
+        64
       ],
       "id": "1d99ee10-ae76-4d08-9c82-7edea317a6c5",
       "name": "Code4"
@@ -2467,7 +2461,7 @@
       "typeVersion": 2.2,
       "position": [
         4320,
-        60
+        64
       ],
       "id": "22537986-b32d-4855-bc93-8a9cb0deb926",
       "name": "If4"
@@ -2496,7 +2490,7 @@
       "typeVersion": 4.2,
       "position": [
         3920,
-        380
+        384
       ],
       "id": "6e360b2f-cfc2-41be-ba8f-07b69c9cc075",
       "name": "HTTP Request16"
@@ -2508,8 +2502,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4120,
-        380
+        4128,
+        384
       ],
       "id": "aad10aa7-b1f8-4bfe-a029-92371c83946c",
       "name": "Code5"
@@ -2541,8 +2535,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        4340,
-        380
+        4352,
+        384
       ],
       "id": "947fd634-430b-4b51-b95b-a4de52e34d7d",
       "name": "If5"
@@ -2571,7 +2565,7 @@
       "typeVersion": 4.2,
       "position": [
         3920,
-        680
+        688
       ],
       "id": "2dddf70c-9e12-45ef-9f50-68d37f5460f3",
       "name": "HTTP Request17"
@@ -2583,8 +2577,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4140,
-        680
+        4144,
+        688
       ],
       "id": "683ea48f-6761-49e9-abc0-e90ac7da5685",
       "name": "Code6"
@@ -2616,8 +2610,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        4340,
-        680
+        4352,
+        688
       ],
       "id": "e7894da4-5500-41bf-9e87-8f466867867f",
       "name": "If6"
@@ -2646,7 +2640,7 @@
       "typeVersion": 4.2,
       "position": [
         3920,
-        1000
+        1008
       ],
       "id": "eb3dc381-eb50-4e63-8118-4ae551bc67db",
       "name": "HTTP Request18"
@@ -2658,8 +2652,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4140,
-        1000
+        4144,
+        1008
       ],
       "id": "8fd7d5a8-ba8d-4489-9ffd-13d60d22e942",
       "name": "Code7"
@@ -2691,8 +2685,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        4340,
-        1000
+        4352,
+        1008
       ],
       "id": "00cc437e-c00f-4c78-8015-c14ffa4bf8da",
       "name": "If7"
@@ -2720,8 +2714,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3940,
-        1320
+        3952,
+        1328
       ],
       "id": "e50f9216-66e2-4647-ae6d-81852d151d65",
       "name": "HTTP Request19"
@@ -2734,7 +2728,7 @@
       "typeVersion": 2,
       "position": [
         4160,
-        1320
+        1328
       ],
       "id": "56baf17d-4479-4ab7-bf9c-59b2fb6e770b",
       "name": "Code8"
@@ -2766,8 +2760,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        4360,
-        1320
+        4368,
+        1328
       ],
       "id": "7fb7b239-47c0-4d67-95e3-d31888afe525",
       "name": "If8"
@@ -2781,8 +2775,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        840,
-        520
+        848,
+        528
       ],
       "id": "a2994c7a-95a1-4c44-b278-5b2ebb3fbf12",
       "name": "Respond to Webhook"
@@ -2797,7 +2791,7 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        840,
+        848,
         720
       ],
       "id": "fd78b5fd-0cc5-4fde-8614-86a83800a585",
@@ -2813,15 +2807,75 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        620,
-        700
+        624,
+        704
       ],
       "id": "5ed5c813-35d9-4cd9-8358-52e32e830c35",
       "name": "Webhook1",
       "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Webhook1": [
+      {
+        "json": {
+          "headers": {
+            "connection": "close",
+            "host": "cloud.n8n.vn",
+            "x-forwarded-scheme": "https",
+            "x-forwarded-proto": "https",
+            "x-forwarded-for": "66.220.149.15",
+            "x-real-ip": "66.220.149.15",
+            "content-length": "683",
+            "x-hub-signature": "sha1=017fc31eb8e23b878e000f3148982654da61a640",
+            "x-hub-signature-256": "sha256=0028e130bfc88174cf93660be282d9ea64004b65942e0581a7b502da3b89a79a",
+            "content-type": "application/json",
+            "user-agent": "Webhooks/1.0 (https://fb.me/webhooks)",
+            "accept": "*/*"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "entry": [
+              {
+                "id": "603490756190502",
+                "time": 1766976139,
+                "changes": [
+                  {
+                    "value": {
+                      "from": {
+                        "id": "32993151730329625",
+                        "name": "Đinh Xuân Hiệp"
+                      },
+                      "post": {
+                        "status_type": "added_video",
+                        "is_published": true,
+                        "updated_time": "2025-12-29T02:42:16+0000",
+                        "permalink_url": "https://www.facebook.com/reel/1958205421704506/",
+                        "promotion_status": "inactive",
+                        "id": "603490756190502_122151157838899911"
+                      },
+                      "message": "Xin gia",
+                      "post_id": "603490756190502_122151157838899911",
+                      "comment_id": "122151157838899911_631563023348266",
+                      "created_time": 1766976136,
+                      "item": "comment",
+                      "parent_id": "603490756190502_122151157838899911",
+                      "verb": "add"
+                    },
+                    "field": "feed"
+                  }
+                ]
+              }
+            ],
+            "object": "page"
+          },
+          "webhookUrl": "https://cloud.n8n.vn/webhook/Comment",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
   "settings": {
     "executionOrder": "v1"
   },
@@ -2837,6 +2891,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2025-12-05T14:52:22.000Z",
-  "versionId": "6155cf94-142f-406f-a986-7c34e223ae22"
+  "updatedAt": "2025-12-29T02:50:44.000Z",
+  "versionId": "c9ba3c02-1060-4551-9891-25d635a92dce"
 }
