@@ -2815,67 +2815,7 @@
       "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
     }
   ],
-  "pinData": {
-    "Webhook1": [
-      {
-        "json": {
-          "headers": {
-            "connection": "close",
-            "host": "cloud.n8n.vn",
-            "x-forwarded-scheme": "https",
-            "x-forwarded-proto": "https",
-            "x-forwarded-for": "66.220.149.15",
-            "x-real-ip": "66.220.149.15",
-            "content-length": "683",
-            "x-hub-signature": "sha1=017fc31eb8e23b878e000f3148982654da61a640",
-            "x-hub-signature-256": "sha256=0028e130bfc88174cf93660be282d9ea64004b65942e0581a7b502da3b89a79a",
-            "content-type": "application/json",
-            "user-agent": "Webhooks/1.0 (https://fb.me/webhooks)",
-            "accept": "*/*"
-          },
-          "params": {},
-          "query": {},
-          "body": {
-            "entry": [
-              {
-                "id": "603490756190502",
-                "time": 1766976139,
-                "changes": [
-                  {
-                    "value": {
-                      "from": {
-                        "id": "32993151730329625",
-                        "name": "Đinh Xuân Hiệp"
-                      },
-                      "post": {
-                        "status_type": "added_video",
-                        "is_published": true,
-                        "updated_time": "2025-12-29T02:42:16+0000",
-                        "permalink_url": "https://www.facebook.com/reel/1958205421704506/",
-                        "promotion_status": "inactive",
-                        "id": "603490756190502_122151157838899911"
-                      },
-                      "message": "Xin gia",
-                      "post_id": "603490756190502_122151157838899911",
-                      "comment_id": "122151157838899911_631563023348266",
-                      "created_time": 1766976136,
-                      "item": "comment",
-                      "parent_id": "603490756190502_122151157838899911",
-                      "verb": "add"
-                    },
-                    "field": "feed"
-                  }
-                ]
-              }
-            ],
-            "object": "page"
-          },
-          "webhookUrl": "https://cloud.n8n.vn/webhook/Comment",
-          "executionMode": "production"
-        }
-      }
-    ]
-  },
+  "pinData": {},
   "settings": {
     "executionOrder": "v1"
   },
@@ -2891,6 +2831,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2025-12-29T02:50:44.000Z",
-  "versionId": "c9ba3c02-1060-4551-9891-25d635a92dce"
+  "updatedAt": "2025-12-29T17:18:09.000Z",
+  "versionId": "dca00943-61f8-49fc-9b32-52d2091cf66c"
 }
