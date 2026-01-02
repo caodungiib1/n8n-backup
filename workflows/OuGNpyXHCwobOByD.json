@@ -752,7 +752,7 @@
     },
     {
       "parameters": {
-        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
+        "url": "=https://graph.facebook.com/v24.0/{{ ($('Google Sheets').item.json['Post id'] || '').split('_').shift() }}",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -1385,7 +1385,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"14667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"112337135264520\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
+        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"14667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"663128990217389\",\n  \"112337135264520\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1450,6 +1450,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-01-01T19:59:07.000Z",
-  "versionId": "f3e68539-ebd5-4c6c-97c4-c764459f072c"
+  "updatedAt": "2026-01-02T00:46:16.000Z",
+  "versionId": "57f740dc-944c-4b7b-b14a-231676d69e24"
 }
