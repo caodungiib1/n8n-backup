@@ -1161,7 +1161,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Lấy dữ liệu từ Google Sheets\nconst inputString = $('Google Sheets1').item.json['Comtemt Chưa Rep']; \n// Hoặc nếu muốn dùng expression trực tiếp:\n// const inputString = $('Google Sheets1').item.json['Trạng Thái Bình Luận'];\n\n// Tách từng dòng, loại bỏ khoảng trắng và dòng rỗng\nconst linesArray = inputString\n  .split('\\n')\n  .map(line => line.trim())\n  .filter(line => line !== \"\");\n\n// Trả về mảng object để n8n xử lý tiếp\nreturn linesArray.map(line => ({ comment_status: line }));"
+        "jsCode": "const postId = $('Google Sheets1').item.json['Post id'];\nconst inputString = $('Google Sheets1').item.json['Comtemt Chưa Rep'] || \"\";\n\n// Tách các dòng từ cột \"Comtemt Chưa Rep\"\nconst commentLines = inputString\n  .split('\\n')\n  .map(l => l.trim())\n  .filter(Boolean);\n\n// Ghép postId thành item đầu tiên\nconst result = [\n  {\n    json: {\n      comment_status: postId\n    }\n  },\n  ...commentLines.map(line => ({\n    json: {\n      comment_status: line\n    }\n  }))\n];\n\nreturn result;"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1450,6 +1450,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-01-02T00:46:16.000Z",
-  "versionId": "57f740dc-944c-4b7b-b14a-231676d69e24"
+  "updatedAt": "2026-01-05T02:50:29.000Z",
+  "versionId": "b00b65d7-6f24-4c28-a40a-a7c61fb56075"
 }
