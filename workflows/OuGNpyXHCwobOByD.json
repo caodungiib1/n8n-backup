@@ -1434,7 +1434,71 @@
       "name": "Phân Tích"
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Telegram Trigger": [
+      {
+        "json": {
+          "update_id": 363835791,
+          "message": {
+            "message_id": 1306,
+            "from": {
+              "id": 5553479863,
+              "is_bot": false,
+              "first_name": "Dũng",
+              "username": "caodungiib1",
+              "language_code": "vi"
+            },
+            "chat": {
+              "id": 5553479863,
+              "first_name": "Dũng",
+              "username": "caodungiib1",
+              "type": "private"
+            },
+            "date": 1767661794,
+            "reply_to_message": {
+              "message_id": 1302,
+              "from": {
+                "id": 7356172633,
+                "is_bot": true,
+                "first_name": "Hỗ trợ đăng bài",
+                "username": "ho_tro_dang_bai_bot"
+              },
+              "chat": {
+                "id": 5553479863,
+                "first_name": "Dũng",
+                "username": "caodungiib1",
+                "type": "private"
+              },
+              "date": 1767635340,
+              "text": "Bài này đang chưa có link shopee nè: \nXem video Facebook",
+              "entities": [
+                {
+                  "offset": 38,
+                  "length": 18,
+                  "type": "text_link",
+                  "url": "https://www.facebook.com/reel/1783973558928371"
+                }
+              ],
+              "link_preview_options": {
+                "is_disabled": true
+              }
+            },
+            "text": "https://s.shopee.vn/8AOgpwBL9Q",
+            "entities": [
+              {
+                "offset": 0,
+                "length": 30,
+                "type": "url"
+              }
+            ],
+            "link_preview_options": {
+              "url": "https://s.shopee.vn/8AOgpwBL9Q"
+            }
+          }
+        }
+      }
+    ]
+  },
   "settings": {
     "executionOrder": "v1"
   },
@@ -1450,6 +1514,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-01-05T02:50:29.000Z",
-  "versionId": "b00b65d7-6f24-4c28-a40a-a7c61fb56075"
+  "updatedAt": "2026-01-06T02:49:18.000Z",
+  "versionId": "c188d3c9-59aa-4596-a8a1-b6801101b59e"
 }
