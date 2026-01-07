@@ -1385,7 +1385,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"14667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"663128990217389\",\n  \"112337135264520\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
+        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"714667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"663128990217389\",\n  \"112337135264520\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1450,6 +1450,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-01-06T06:00:38.000Z",
-  "versionId": "1d3a13ba-982e-4cce-b02e-b5e246b74881"
+  "updatedAt": "2026-01-07T16:22:35.000Z",
+  "versionId": "82b6c862-a2fd-44f3-af2a-4852e71912a6"
 }
