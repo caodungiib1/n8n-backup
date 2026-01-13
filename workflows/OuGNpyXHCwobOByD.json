@@ -16,7 +16,7 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript",
+            "node": "Code1",
             "type": "main",
             "index": 0
           }
@@ -27,7 +27,7 @@
       "main": [
         [
           {
-            "node": "Code1",
+            "node": "Switch",
             "type": "main",
             "index": 0
           }
@@ -151,11 +151,33 @@
         ]
       ]
     },
+    "Phân Tích": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Phân Tích",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "If2": {
       "main": [
         [
           {
-            "node": "Code in JavaScript1",
+            "node": "Phân Tích",
             "type": "main",
             "index": 0
           }
@@ -225,6 +247,177 @@
         ]
       ]
     },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request16",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request7": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request17",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request9": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request18",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request11": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request19",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Tiện Ích Mọi Nhà - caodungiib1": {
       "ai_languageModel": [
         [
@@ -240,7 +433,7 @@
       "main": [
         [
           {
-            "node": "Wait1",
+            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -263,6 +456,50 @@
         [
           {
             "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request11",
             "type": "main",
             "index": 0
           }
@@ -302,6 +539,138 @@
         ]
       ]
     },
+    "HTTP Request16": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "If5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If5": {
+      "main": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request17": {
+      "main": [
+        [
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "If6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If6": {
+      "main": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request18": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "If7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If7": {
+      "main": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request19": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "If8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If8": {
+      "main": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Webhook1": {
       "main": [
         [
@@ -330,39 +699,6 @@
           }
         ]
       ]
-    },
-    "Code in JavaScript": {
-      "main": [
-        [
-          {
-            "node": "If",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code in JavaScript1": {
-      "main": [
-        [
-          {
-            "node": "If1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Groq Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Phân Tích",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
     }
   },
   "createdAt": "2025-11-03T03:23:06.042Z",
@@ -382,8 +718,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        3888,
-        240
+        4580,
+        60
       ],
       "id": "37034556-619a-475f-bbfb-0af74b009d2a",
       "name": "AI Agent1"
@@ -400,16 +736,16 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 76027938,
+          "value": 1795023390,
           "mode": "list",
-          "cachedResultName": "Tông Hợp Comment",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
         },
         "filtersUI": {
           "values": [
             {
-              "lookupColumn": "Post id",
-              "lookupValue": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}"
+              "lookupColumn": "ID Post",
+              "lookupValue": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id.split('_')[0] }}"
             }
           ]
         },
@@ -418,12 +754,11 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1984,
-        256
+        1840,
+        680
       ],
       "id": "57397170-ace7-4848-9c42-d8179870739a",
       "name": "Google Sheets",
-      "alwaysOutputData": true,
       "credentials": {
         "googleApi": {
           "id": "xWSmmGGfnRVMBnSN",
@@ -437,7 +772,7 @@
           "options": {
             "caseSensitive": true,
             "leftValue": "",
-            "typeValidation": "loose",
+            "typeValidation": "strict",
             "version": 2
           },
           "conditions": [
@@ -450,27 +785,17 @@
                 "operation": "notEmpty",
                 "singleValue": true
               }
-            },
-            {
-              "id": "1b4c24c6-f3bc-492e-af20-fc92a156c26b",
-              "leftValue": "={{ $json.notExistInSheet }}",
-              "rightValue": "=false",
-              "operator": {
-                "type": "string",
-                "operation": "contains"
-              }
             }
           ],
           "combinator": "and"
         },
-        "looseTypeValidation": true,
         "options": {}
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2352,
-        256
+        2180,
+        680
       ],
       "id": "1503b102-7454-4865-a6e6-aad97a5df5df",
       "name": "If"
@@ -478,7 +803,7 @@
     {
       "parameters": {
         "chatId": "5553479863",
-        "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $json[\"Link Facebook\"] }}\">Xem video Facebook</a>",
+        "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $('Google Sheets').item.json['Link Video Tiktok'] }}\">Xem video TikTok</a>\n<a href=\"{{ $json['Link Post'] }}\">Xem video Facebook</a>",
         "replyMarkup": "forceReply",
         "forceReply": {},
         "additionalFields": {
@@ -489,8 +814,8 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        2640,
-        592
+        2400,
+        1320
       ],
       "id": "7cb0f229-e077-46e4-82b7-4da17d649aa0",
       "name": "Telegram",
@@ -514,8 +839,8 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.1,
       "position": [
-        736,
-        -368
+        800,
+        -360
       ],
       "id": "3f9104e4-59c5-42ae-8fde-2627ea7dfb86",
       "name": "Telegram Trigger",
@@ -541,40 +866,100 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 76027938,
+          "value": 1795023390,
           "mode": "list",
-          "cachedResultName": "Tông Hợp Comment",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
         },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Link Facebook": "={{ $json.message.reply_to_message.entities[0].url }}",
+            "Link Post": "={{ $json.message.reply_to_message.entities[1].url }}",
             "Link Shopee": "={{ $json.message.text }}"
           },
           "matchingColumns": [
-            "Link Facebook"
+            "Link Post"
           ],
           "schema": [
             {
-              "id": "Link Facebook",
-              "displayName": "Link Facebook",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Post id",
-              "displayName": "Post id",
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
               "required": false,
               "defaultMatch": false,
               "display": true,
               "type": "string",
               "canBeUsedToMatch": true,
               "removed": true
+            },
+            {
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
             },
             {
               "id": "Link Shopee",
@@ -586,8 +971,8 @@
               "canBeUsedToMatch": true
             },
             {
-              "id": "Comtemt Chưa Rep",
-              "displayName": "Comtemt Chưa Rep",
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -596,14 +981,13 @@
               "removed": true
             },
             {
-              "id": "row_number",
-              "displayName": "row_number",
+              "id": "Đăng Story",
+              "displayName": "Đăng Story",
               "required": false,
               "defaultMatch": false,
               "display": true,
-              "type": "number",
+              "type": "string",
               "canBeUsedToMatch": true,
-              "readOnly": true,
               "removed": true
             }
           ],
@@ -615,8 +999,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1024,
-        -368
+        1080,
+        -360
       ],
       "id": "cbd64518-4b1c-4ae6-a853-b23caf368170",
       "name": "Google Sheets2",
@@ -656,8 +1040,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4304,
-        240
+        5000,
+        60
       ],
       "id": "f744451c-d6cc-4df8-a00f-89cf305c8012",
       "name": "HTTP Request"
@@ -665,43 +1049,104 @@
     {
       "parameters": {
         "authentication": "serviceAccount",
-        "operation": "append",
+        "operation": "update",
         "documentId": {
           "__rl": true,
           "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
-          "mode": "list"
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
-          "value": 76027938,
+          "value": 1795023390,
           "mode": "list",
-          "cachedResultName": "Tông Hợp Comment",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
         },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Link Facebook": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post.permalink_url.replace(/\\/+$/, '') }}",
-            "Post id": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}",
-            "Comtemt Chưa Rep": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}"
+            "Link Post": "={{ $('Google Sheets').item.json['Link Post'] }}",
+            "Trạng Thái Bình Luận": "={{ \n  $('Webhook1').item.json.body.entry[0].changes[0].value.post_id \n  + '\\n' + \n  $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id \n}}"
           },
           "matchingColumns": [
-            "Link Video Tiktok"
+            "Link Post"
           ],
           "schema": [
             {
-              "id": "Link Facebook",
-              "displayName": "Link Facebook",
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
               "required": false,
               "defaultMatch": false,
               "display": true,
               "type": "string",
               "canBeUsedToMatch": true,
-              "removed": false
+              "removed": true
             },
             {
-              "id": "Post id",
-              "displayName": "Post id",
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -720,14 +1165,24 @@
               "removed": true
             },
             {
-              "id": "Comtemt Chưa Rep",
-              "displayName": "Comtemt Chưa Rep",
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
               "required": false,
               "defaultMatch": false,
               "display": true,
               "type": "string",
               "canBeUsedToMatch": true,
               "removed": false
+            },
+            {
+              "id": "Đăng Story",
+              "displayName": "Đăng Story",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
             }
           ],
           "attemptToConvertTypes": false,
@@ -738,8 +1193,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        2384,
-        592
+        2140,
+        1320
       ],
       "id": "915b98ff-b3b3-404d-b75a-37e8f3a4859d",
       "name": "Google Sheets3",
@@ -752,7 +1207,7 @@
     },
     {
       "parameters": {
-        "url": "=https://graph.facebook.com/v24.0/{{ ($('Google Sheets').item.json['Post id'] || '').split('_').shift() }}",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -762,7 +1217,7 @@
             },
             {
               "name": "access_token",
-              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+              "value": "EAAL2gM8wFYsBQPWU05bBBZAITZBy745scsPnksfVSSRm7c9WAXZCiQausGhPNnZCWOKaN9uSXps3xCv0851ZCshZCduSNt8k3wy8S05g8OBAR4rmCJpLwrn5k91nbIKahGnZAoMj58YFuaIuBsTNlEbW6rRQSvbAZACGJo51sPkIu2mpDeHTZBJyomMRxxhNM"
             }
           ]
         },
@@ -777,8 +1232,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3008,
-        240
+        3700,
+        60
       ],
       "id": "7ff84e12-0a5c-4eeb-ad2d-7939dba307ef",
       "name": "HTTP Request1"
@@ -795,7 +1250,7 @@
           "conditions": [
             {
               "id": "82a17fd2-ce5c-4957-ba4d-e55b0ec133a2",
-              "leftValue": "={{ $json.result }}",
+              "leftValue": "={{ $json.output }}",
               "rightValue": "=user",
               "operator": {
                 "type": "string",
@@ -804,7 +1259,7 @@
             },
             {
               "id": "25d6310d-d017-4bea-b849-a2d0fcc53602",
-              "leftValue": "={{ $json.result }}",
+              "leftValue": "={{ $json.output }}",
               "rightValue": "User",
               "operator": {
                 "type": "string",
@@ -820,8 +1275,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1744,
-        272
+        1600,
+        700
       ],
       "id": "215d6a0f-e352-429f-bfd4-644524a953ed",
       "name": "If1"
@@ -835,7 +1290,7 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        2496,
+        2560,
         -240
       ],
       "id": "688c2652-49e7-4f8d-b9bd-6458f6006ffa",
@@ -843,20 +1298,21 @@
     },
     {
       "parameters": {
+        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        2448,
-        -16
+        2500,
+        -20
       ],
       "id": "6fec107f-041b-47a8-b377-d9389ba58235",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "ui0ULTnV5CioljxV",
-          "name": "Rep Commet"
+          "id": "lvCkbEQikxMvAqxJ",
+          "name": "Phân Tích"
         }
       }
     },
@@ -888,7 +1344,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2928,
+        2980,
         -240
       ],
       "id": "024957e6-354f-4143-b017-8dd10cba3bd1",
@@ -896,7 +1352,7 @@
     },
     {
       "parameters": {
-        "url": "=https://graph.facebook.com/v24.0/{{ ($json[\"Post id\"] || '').split('_').shift() }}",
+        "url": "=https://graph.facebook.com/v24.0/{{ $json['Trạng Thái Đăng'] }}",
         "sendQuery": true,
         "queryParameters": {
           "parameters": [
@@ -921,8 +1377,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1536,
-        -368
+        1600,
+        -360
       ],
       "id": "29479282-6f75-4105-b8f3-9c3be284f6d9",
       "name": "HTTP Request3"
@@ -939,16 +1395,16 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 76027938,
+          "value": 1795023390,
           "mode": "list",
-          "cachedResultName": "Tông Hợp Comment",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
         },
         "filtersUI": {
           "values": [
             {
-              "lookupColumn": "Link Facebook",
-              "lookupValue": "={{ $json[\"Link Facebook\"] }}"
+              "lookupColumn": "Link Post",
+              "lookupValue": "={{ $json['Link Post'] }}"
             }
           ]
         },
@@ -957,8 +1413,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1280,
-        -368
+        1340,
+        -360
       ],
       "id": "58ce382a-b45d-4418-9167-1bc2682f7f61",
       "name": "Google Sheets1",
@@ -966,6 +1422,43 @@
         "googleApi": {
           "id": "xWSmmGGfnRVMBnSN",
           "name": "Driver - Sheet"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.entry[0].changes[0].value.from.id }}",
+        "options": {
+          "systemMessage": "Nếu user có số 603490756190502, hãy trả lời \"Page\". Nếu user có số 714667461724221, hãy trả lời \"Page\". Nếu user có số 656708390864429, hãy trả lời \"Page\". Nếu user có số 663128990217389, hãy trả lời \"Page\".Nếu user có tên Gia Dụng Giá Tốt, hãy trả lời \"Page\". Còn lại sẽ trả lời \" user\"\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1260,
+        700
+      ],
+      "id": "d4315e11-1e07-4b18-921e-d468b23a2364",
+      "name": "Phân Tích"
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        1300,
+        920
+      ],
+      "id": "2a7ce7d2-6eb9-4e1e-8c55-a8547a0cb674",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "vly0HfuTuu7swd30",
+          "name": "Phân Tích"
         }
       }
     },
@@ -997,8 +1490,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1216,
-        288
+        1040,
+        720
       ],
       "id": "82800bee-5381-4355-8a28-f33d41771e78",
       "name": "If2"
@@ -1015,7 +1508,7 @@
           "conditions": [
             {
               "id": "59c73f6b-a4ea-4005-9038-877fb03104b5",
-              "leftValue": "={{ $json.rawItems[0][\"Comtemt Chưa Rep\"] }}",
+              "leftValue": "={{ $('Google Sheets').item.json['Trạng Thái Bình Luận'] }}",
               "rightValue": "",
               "operator": {
                 "type": "string",
@@ -1031,8 +1524,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2032,
-        688
+        1780,
+        1420
       ],
       "id": "1488d36b-3791-4985-a8e4-fc292122e60d",
       "name": "If3"
@@ -1050,19 +1543,19 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": 76027938,
+          "value": 1795023390,
           "mode": "list",
-          "cachedResultName": "Tông Hợp Comment",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+          "cachedResultName": "Đăng Page Gia Dụng",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=1795023390"
         },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Comtemt Chưa Rep": "={{ $('Google Sheets').item.json[\"Comtemt Chưa Rep\"] + '\\n' + $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}",
-            "Post id": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}"
+            "Link Post": "={{ $('Google Sheets').item.json['Link Post'] }}",
+            "Trạng Thái Bình Luận": "={{ $('Google Sheets').item.json['Trạng Thái Bình Luận'] + '\\n' + $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}"
           },
           "matchingColumns": [
-            "Post id"
+            "Link Post"
           ],
           "schema": [
             {
@@ -1076,8 +1569,8 @@
               "removed": true
             },
             {
-              "id": "Link Facebook",
-              "displayName": "Link Facebook",
+              "id": "Content Mẫu",
+              "displayName": "Content Mẫu",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -1086,8 +1579,58 @@
               "removed": true
             },
             {
-              "id": "Post id",
-              "displayName": "Post id",
+              "id": "Content",
+              "displayName": "Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Hình Ảnh Hoặc Video",
+              "displayName": "Link Hình Ảnh Hoặc Video",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Dạng Nội Dung",
+              "displayName": "Dạng Nội Dung",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Trạng Thái Đăng",
+              "displayName": "Trạng Thái Đăng",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "ID Post",
+              "displayName": "ID Post",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Post",
+              "displayName": "Link Post",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -1106,23 +1649,23 @@
               "removed": true
             },
             {
-              "id": "Comtemt Chưa Rep",
-              "displayName": "Comtemt Chưa Rep",
+              "id": "Trạng Thái Bình Luận",
+              "displayName": "Trạng Thái Bình Luận",
               "required": false,
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true
+              "canBeUsedToMatch": true,
+              "removed": false
             },
             {
-              "id": "row_number",
-              "displayName": "row_number",
+              "id": "Đăng Story",
+              "displayName": "Đăng Story",
               "required": false,
               "defaultMatch": false,
               "display": true,
-              "type": "number",
+              "type": "string",
               "canBeUsedToMatch": true,
-              "readOnly": true,
               "removed": true
             }
           ],
@@ -1134,8 +1677,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        2384,
-        784
+        2140,
+        1520
       ],
       "id": "707fc40d-cdc9-444d-a7f8-246d27e93044",
       "name": "Google Sheets4",
@@ -1153,21 +1696,21 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        2048,
-        -368
+        2100,
+        -360
       ],
       "id": "c0f06e67-6b6c-4d13-839d-722560d8f465",
       "name": "Loop Over Items"
     },
     {
       "parameters": {
-        "jsCode": "const postId = $('Google Sheets1').item.json['Post id'];\nconst inputString = $('Google Sheets1').item.json['Comtemt Chưa Rep'] || \"\";\n\n// Tách các dòng từ cột \"Comtemt Chưa Rep\"\nconst commentLines = inputString\n  .split('\\n')\n  .map(l => l.trim())\n  .filter(Boolean);\n\n// Ghép postId thành item đầu tiên\nconst result = [\n  {\n    json: {\n      comment_status: postId\n    }\n  },\n  ...commentLines.map(line => ({\n    json: {\n      comment_status: line\n    }\n  }))\n];\n\nreturn result;"
+        "jsCode": "// Lấy dữ liệu từ Google Sheets\nconst inputString = $('Google Sheets1').item.json[\"Trạng Thái Bình Luận\"]; \n// Hoặc nếu muốn dùng expression trực tiếp:\n// const inputString = $('Google Sheets1').item.json['Trạng Thái Bình Luận'];\n\n// Tách từng dòng, loại bỏ khoảng trắng và dòng rỗng\nconst linesArray = inputString\n  .split('\\n')\n  .map(line => line.trim())\n  .filter(line => line !== \"\");\n\n// Trả về mảng object để n8n xử lý tiếp\nreturn linesArray.map(line => ({ comment_status: line }));\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1808,
-        -368
+        1860,
+        -360
       ],
       "id": "280b55c8-fed4-443d-af69-63fe3f962f75",
       "name": "Code"
@@ -1180,7 +1723,7 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        3136,
+        3200,
         -240
       ],
       "id": "6a11e420-07a8-4f05-9d37-ab949015bd42",
@@ -1189,20 +1732,567 @@
     },
     {
       "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Google Sheets').item.json[\"Trạng Thái Đăng\"] }}",
+                    "rightValue": 603490756190502,
+                    "operator": {
+                      "type": "number",
+                      "operation": "equals"
+                    },
+                    "id": "6a11b8ae-c294-4547-acef-2f3dec65760a"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tiện Ích Mọi Nhà"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6b7abe98-7757-4504-8ed9-b73497b344ea",
+                    "leftValue": "={{ $('Google Sheets').item.json[\"Trạng Thái Đăng\"] }}",
+                    "rightValue": 714667461724221,
+                    "operator": {
+                      "type": "number",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Gia Dụng Giá Tốt "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1c41245a-19a2-4751-a95c-705fa7d06d8e",
+                    "leftValue": "={{ $('Google Sheets').item.json[\"Trạng Thái Đăng\"] }}",
+                    "rightValue": 656708390864429,
+                    "operator": {
+                      "type": "number",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Gia Dụng Mọi Nhà "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b735114e-d36f-4177-b7c5-c4943f1f6fd7",
+                    "leftValue": "={{ $('Google Sheets').item.json[\"Trạng Thái Đăng\"] }}",
+                    "rightValue": 663128990217389,
+                    "operator": {
+                      "type": "number",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tạp Hoá Xanh "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "98ec4006-8ae7-4283-a804-30d94bf96335",
+                    "leftValue": "={{ $('Google Sheets').item.json[\"Trạng Thái Đăng\"] }}",
+                    "rightValue": 692768803911413,
+                    "operator": {
+                      "type": "number",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tổng Kho Gia Dụng "
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        2540,
+        620
+      ],
+      "id": "3bbcdf07-9c5f-472d-a8f2-0ba9cad1a20d",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=**Bạn chỉ cần trả về đúng một câu duy nhất, không giải thích, không mô tả, không giới thiệu.\nHãy viết một câu tương tự câu mẫu sau, có sử dụng icon để câu nói sinh động hơn:\n\"Chào bạn, mình gửi bạn link sản phẩm nhé ạ: {{ $('Code1').item.json.LinkShopee }}\"\nLưu ý:\n- Giữ nguyên hoàn toàn chuỗi: {{ $('Code1').item.json.LinkShopee }}\n- Không thêm text trước câu trả lời.\n- Chỉ trả về câu hoàn chỉnh dạng như:\n\"Chào bạn 👋, mình gửi bạn link sản phẩm nè, xem thử nha: {{ $('Code1').item.json.LinkShopee }} ✨\"**",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        4580,
+        380
+      ],
+      "id": "25f79848-506c-48ef-9a27-85f774cece37",
+      "name": "AI Agent2"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        3888,
-        416
+        4580,
+        560
+      ],
+      "id": "1b5cdbd2-97ae-4746-bdcb-2ef469f6f778",
+      "name": "Google Gemini Chat Model2",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "TdsIzXvOvDSXd52Q",
+          "name": "Gia Dụng Giá Tốt - caodungiib1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request5').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5000,
+        380
+      ],
+      "id": "a0b9a968-7fd9-4cdc-a48a-5e7fe1539929",
+      "name": "HTTP Request4"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3720,
+        380
+      ],
+      "id": "2bb3369f-e82c-48af-afcf-c77e3b36ed31",
+      "name": "HTTP Request5"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=**Bạn chỉ cần trả về đúng một câu duy nhất, không giải thích, không mô tả, không giới thiệu.\nHãy viết một câu tương tự câu mẫu sau, có sử dụng icon để câu nói sinh động hơn:\n\"Chào bạn, mình gửi bạn link sản phẩm nhé ạ: {{ $('Code1').item.json.LinkShopee }}\"\nLưu ý:\n- Giữ nguyên hoàn toàn chuỗi: {{ $('Code1').item.json.LinkShopee }}\n- Không thêm text trước câu trả lời.\n- Chỉ trả về câu hoàn chỉnh dạng như:\n\"Chào bạn 👋, mình gửi bạn link sản phẩm nè, xem thử nha: {{ $('Code1').item.json.LinkShopee }} ✨\"**",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        4560,
+        680
+      ],
+      "id": "c00f45e9-57b1-4838-a78d-494c66657e38",
+      "name": "AI Agent3"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        4560,
+        860
+      ],
+      "id": "b5bfa96c-5fbc-4cef-a8ca-178b5afde4f3",
+      "name": "Google Gemini Chat Model3",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "zBuRGolrlrdzJFK8",
+          "name": "Gia Dụng Mọi Nhà - caodungiib1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request7').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4980,
+        680
+      ],
+      "id": "4c6e8d13-6452-4c7d-996e-7f6b2168d490",
+      "name": "HTTP Request6"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3720,
+        680
+      ],
+      "id": "ce12f980-9b3d-46c2-941d-55ee395a9f05",
+      "name": "HTTP Request7"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=**Bạn chỉ cần trả về đúng một câu duy nhất, không giải thích, không mô tả, không giới thiệu.\nHãy viết một câu tương tự câu mẫu sau, có sử dụng icon để câu nói sinh động hơn:\n\"Chào bạn, mình gửi bạn link sản phẩm nhé ạ: {{ $('Code1').item.json.LinkShopee }}\"\nLưu ý:\n- Giữ nguyên hoàn toàn chuỗi: {{ $('Code1').item.json.LinkShopee }}\n- Không thêm text trước câu trả lời.\n- Chỉ trả về câu hoàn chỉnh dạng như:\n\"Chào bạn 👋, mình gửi bạn link sản phẩm nè, xem thử nha: {{ $('Code1').item.json.LinkShopee }} ✨\"**",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        4560,
+        1000
+      ],
+      "id": "5b83c1ac-ba27-4d9f-bb5d-338992e87fa1",
+      "name": "AI Agent4"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        4560,
+        1180
+      ],
+      "id": "7e2bfaa8-10a3-4585-936e-fdbb4221f8ae",
+      "name": "Google Gemini Chat Model4",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "UHS17LDfxjqxrprE",
+          "name": "Tạp Hoá Xanh - caodungiib1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request9').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4980,
+        1000
+      ],
+      "id": "f29d44bd-840a-412a-a459-cdc93d63ffd9",
+      "name": "HTTP Request8"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAAhb3ZALDBocBQK6lbuYzz5RC3spF255iFwtvmQA8ZCTGdVkyuUWX8ZBXxpthPQpQpjgoiED1ntSOaLciACZBhBiPRmlFWZAHtzxPrkyZBU9GPRfcSwqGfI7QZANgg5ZBNdu4bknY8I9AiFDoRRhKjGMLwXMjJ3bACmubDmBwhjZCkveUAvZCdO8fPwt40oHna"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3720,
+        1000
+      ],
+      "id": "7ef2f58e-2fe5-4cac-a010-8ef17998469e",
+      "name": "HTTP Request9"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=**Bạn chỉ cần trả về đúng một câu duy nhất, không giải thích, không mô tả, không giới thiệu.\nHãy viết một câu tương tự câu mẫu sau, có sử dụng icon để câu nói sinh động hơn:\n\"Chào bạn, mình gửi bạn link sản phẩm nhé ạ: {{ $('Code1').item.json.LinkShopee }}\"\nLưu ý:\n- Giữ nguyên hoàn toàn chuỗi: {{ $('Code1').item.json.LinkShopee }}\n- Không thêm text trước câu trả lời.\n- Chỉ trả về câu hoàn chỉnh dạng như:\n\"Chào bạn 👋, mình gửi bạn link sản phẩm nè, xem thử nha: {{ $('Code1').item.json.LinkShopee }} ✨\"**",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        4560,
+        1320
+      ],
+      "id": "84c11311-d16a-4eaa-929e-9eb051048a81",
+      "name": "AI Agent5"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        4560,
+        1500
+      ],
+      "id": "1c6d14a7-7aa8-45bd-869d-f2b807513edb",
+      "name": "Google Gemini Chat Model5",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "L2ZprN9rN7Bd32kk",
+          "name": "Tổng Kho Gia Dụng - caodungiib1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request11').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4980,
+        1320
+      ],
+      "id": "61fb7490-584d-4379-9ceb-628f0f2a4225",
+      "name": "HTTP Request10"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Google Sheets').item.json['Trạng Thái Đăng'] }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3720,
+        1320
+      ],
+      "id": "2d10d66a-fc11-4127-806f-a48214a89da9",
+      "name": "HTTP Request11"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        4580,
+        240
       ],
       "id": "265480d6-bbe7-4ae8-834f-1c74ce341c16",
       "name": "Tiện Ích Mọi Nhà - caodungiib1",
       "credentials": {
         "googlePalmApi": {
-          "id": "ui0ULTnV5CioljxV",
-          "name": "Rep Commet"
+          "id": "TzISxgHu11Dqh9zB",
+          "name": "Tiện Ích Mọi Nhà - nhannguyenyb6868"
         }
       }
     },
@@ -1213,8 +2303,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2576,
-        240
+        2000,
+        680
       ],
       "id": "ba1882f8-5135-4bfc-b33b-b4ae5f1a692e",
       "name": "Code1"
@@ -1226,7 +2316,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2256,
+        2320,
         -240
       ],
       "id": "871b3014-e228-464e-b439-996484e27173",
@@ -1240,12 +2330,72 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        2800,
-        240
+        3460,
+        60
       ],
       "id": "4076c120-1454-409d-8c64-14f5c6e798cc",
       "name": "Wait1",
       "webhookId": "3c2cbbe6-ddae-4a7a-b2cb-2b206905c6ba"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3460,
+        380
+      ],
+      "id": "2c1ab157-6ad4-4b99-874f-72d7e155f69c",
+      "name": "Wait2",
+      "webhookId": "52aa2f47-5265-4744-bade-195087699eb9"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3460,
+        680
+      ],
+      "id": "ff9fd3f1-f142-4693-a400-e8b3a19926c5",
+      "name": "Wait3",
+      "webhookId": "3b8d0762-80d4-4446-9634-dc27a96b275c"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3460,
+        1000
+      ],
+      "id": "d25a3ec1-aade-4949-a59c-66e14d3e6a21",
+      "name": "Wait4",
+      "webhookId": "d8d30126-6bb3-4517-8fbe-27a78f32dfef"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        3460,
+        1320
+      ],
+      "id": "0a84012e-5e2a-4023-b04d-7cbb0245f392",
+      "name": "Wait5",
+      "webhookId": "c5f9dc72-85b3-47eb-af0e-a6ce8f054ac8"
     },
     {
       "parameters": {
@@ -1270,8 +2420,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3200,
-        240
+        3900,
+        60
       ],
       "id": "876931b4-f9ab-41b1-8637-97f0262c50cb",
       "name": "HTTP Request15"
@@ -1283,8 +2433,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3408,
-        240
+        4100,
+        60
       ],
       "id": "1d99ee10-ae76-4d08-9c82-7edea317a6c5",
       "name": "Code4"
@@ -1316,11 +2466,311 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        3616,
-        240
+        4320,
+        60
       ],
       "id": "22537986-b32d-4855-bc93-8a9cb0deb926",
       "name": "If4"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request5').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3920,
+        380
+      ],
+      "id": "6e360b2f-cfc2-41be-ba8f-07b69c9cc075",
+      "name": "HTTP Request16"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.body.data;\n\n// Nếu mảng data có ít nhất 1 reply\nif (Array.isArray(data) && data.length > 0) {\n    return [{ status: \"ĐÃ REP COMMENT\", replied: true }];\n} else {\n    return [{ status: \"CHƯA REP COMMENT\", replied: false }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4120,
+        380
+      ],
+      "id": "aad10aa7-b1f8-4bfe-a029-92371c83946c",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "84d5de05-ac51-4114-9f62-39f27f715d15",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "CHƯA REP COMMENT",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4340,
+        380
+      ],
+      "id": "947fd634-430b-4b51-b95b-a4de52e34d7d",
+      "name": "If5"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request7').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3920,
+        680
+      ],
+      "id": "2dddf70c-9e12-45ef-9f50-68d37f5460f3",
+      "name": "HTTP Request17"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.body.data;\n\n// Nếu mảng data có ít nhất 1 reply\nif (Array.isArray(data) && data.length > 0) {\n    return [{ status: \"ĐÃ REP COMMENT\", replied: true }];\n} else {\n    return [{ status: \"CHƯA REP COMMENT\", replied: false }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4140,
+        680
+      ],
+      "id": "683ea48f-6761-49e9-abc0-e90ac7da5685",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "84d5de05-ac51-4114-9f62-39f27f715d15",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "CHƯA REP COMMENT",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4340,
+        680
+      ],
+      "id": "e7894da4-5500-41bf-9e87-8f466867867f",
+      "name": "If6"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook').item.json.body.entry[0].changes[0].value.comment_id }}/comments",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request9').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3920,
+        1000
+      ],
+      "id": "eb3dc381-eb50-4e63-8118-4ae551bc67db",
+      "name": "HTTP Request18"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.body.data;\n\n// Nếu mảng data có ít nhất 1 reply\nif (Array.isArray(data) && data.length > 0) {\n    return [{ status: \"ĐÃ REP COMMENT\", replied: true }];\n} else {\n    return [{ status: \"CHƯA REP COMMENT\", replied: false }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4140,
+        1000
+      ],
+      "id": "8fd7d5a8-ba8d-4489-9ffd-13d60d22e942",
+      "name": "Code7"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "84d5de05-ac51-4114-9f62-39f27f715d15",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "CHƯA REP COMMENT",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4340,
+        1000
+      ],
+      "id": "00cc437e-c00f-4c78-8015-c14ffa4bf8da",
+      "name": "If7"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request11').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3940,
+        1320
+      ],
+      "id": "e50f9216-66e2-4647-ae6d-81852d151d65",
+      "name": "HTTP Request19"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.body.data;\n\n// Nếu mảng data có ít nhất 1 reply\nif (Array.isArray(data) && data.length > 0) {\n    return [{ status: \"ĐÃ REP COMMENT\", replied: true }];\n} else {\n    return [{ status: \"CHƯA REP COMMENT\", replied: false }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4160,
+        1320
+      ],
+      "id": "56baf17d-4479-4ab7-bf9c-59b2fb6e770b",
+      "name": "Code8"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "84d5de05-ac51-4114-9f62-39f27f715d15",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "CHƯA REP COMMENT",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4360,
+        1320
+      ],
+      "id": "7fb7b239-47c0-4d67-95e3-d31888afe525",
+      "name": "If8"
     },
     {
       "parameters": {
@@ -1331,8 +2781,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        992,
-        96
+        840,
+        520
       ],
       "id": "a2994c7a-95a1-4c44-b278-5b2ebb3fbf12",
       "name": "Respond to Webhook"
@@ -1347,8 +2797,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        992,
-        288
+        840,
+        720
       ],
       "id": "fd78b5fd-0cc5-4fde-8614-86a83800a585",
       "name": "Respond to Webhook1"
@@ -1363,75 +2813,12 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        768,
-        272
+        620,
+        700
       ],
       "id": "5ed5c813-35d9-4cd9-8358-52e32e830c35",
       "name": "Webhook1",
       "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
-    },
-    {
-      "parameters": {
-        "jsCode": "// items từ node trước\nconst items = $input.all().map(i => i.json);\n\n// Hàm check tồn tại\nfunction isNotExistInSheet(items) {\n  if (!items) return true;\n\n  // []\n  if (items.length === 0) return true;\n\n  // [{}]\n  if (\n    items.length === 1 &&\n    typeof items[0] === 'object' &&\n    Object.keys(items[0]).length === 0\n  ) {\n    return true;\n  }\n\n  return false;\n}\n\nconst notExist = isNotExistInSheet(items);\n\nreturn [\n  {\n    json: {\n      notExistInSheet: notExist,\n      rawItems: items\n    }\n  }\n];\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        2176,
-        256
-      ],
-      "id": "6999430e-eea9-4b9e-a54a-4a07be18ab7c",
-      "name": "Code in JavaScript"
-    },
-    {
-      "parameters": {
-        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"714667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"663128990217389\",\n  \"112337135264520\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        1488,
-        272
-      ],
-      "id": "dca9d9dc-eb31-49d3-9f59-b5a8b2f65381",
-      "name": "Code in JavaScript1"
-    },
-    {
-      "parameters": {
-        "model": "llama-3.1-8b-instant",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
-      "typeVersion": 1,
-      "position": [
-        1424,
-        848
-      ],
-      "id": "2a7ce7d2-6eb9-4e1e-8c55-a8547a0cb674",
-      "name": "Groq Chat Model",
-      "credentials": {
-        "groqApi": {
-          "id": "vly0HfuTuu7swd30",
-          "name": "Phân Tích"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $json.body.entry[0].changes[0].value.from.id }}",
-        "options": {
-          "systemMessage": "Chỉ trả lời \"Page\" nếu user_id BẰNG CHÍNH XÁC\nmột trong các giá trị sau (so sánh tuyệt đối, không suy luận):\n\n- 603490756190502\n- 14667461724221\n- 656708390864429\n- 692768803911413\n- 934090693112018\n- 509555248913413\n- 540957532433392\n- 177096022156496\n- 112337135264520\n\nMọi giá trị khác → trả lời \"user\""
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        1408,
-        624
-      ],
-      "id": "d4315e11-1e07-4b18-921e-d468b23a2364",
-      "name": "Phân Tích"
     }
   ],
   "pinData": {},
@@ -1450,6 +2837,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-01-07T16:22:35.000Z",
-  "versionId": "82b6c862-a2fd-44f3-af2a-4852e71912a6"
+  "updatedAt": "2025-12-05T14:52:22.000Z",
+  "versionId": "6155cf94-142f-406f-a986-7c34e223ae22"
 }
